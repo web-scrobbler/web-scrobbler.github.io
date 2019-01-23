@@ -1,6 +1,6 @@
 'use strict';
 
-const scriptUrl = 'https://gitcdn.link/repo/david-sabata/web-scrobbler/master/core/connectors.js';
+const scriptUrl = 'https://gitcdn.link/repo/web-scrobbler/web-scrobbler/master/src/core/connectors.js';
 
 require([scriptUrl], (connectors) => {
     $(() => {

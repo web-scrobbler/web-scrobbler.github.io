@@ -1,8 +1,12 @@
+.container {
+	margin-top:20px;
+}
+
 h1, h2, h3, h4, h5 {
 	color: #d51007;
-    font-weight: bold;
+	font-weight: bold;
 }
 
 a, a:hover {
-	color: #d51007;
+	or: #d51007;
 }

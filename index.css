@@ -51,3 +51,8 @@ body {
 .badge a {
 	text-decoration: none;
 }
+
+.footer {
+    margin-top: 50px;
+    color: #666;
+}

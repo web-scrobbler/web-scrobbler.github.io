@@ -1,5 +1,5 @@
 # Web Scrobbler
 
-This is a simple website that lists all supported web services of [Web Scrobbler][1].
+This is a simple website for [Web Scrobbler][1] extension.
 
 [1]: https://github.com/web-scrobbler/web-scrobbler

@@ -54,3 +54,7 @@ body {
     margin-top: 50px;
     color: #666;
 }
+
+.hidden {
+	display: none;
+}

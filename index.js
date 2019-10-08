@@ -22,13 +22,12 @@ function initControls() {
 }
 
 async function updateConnectors() {
-	const connectors = await getConnectors();
-	connectors.sort(sortByLabel);
-
+	const connectors = (await getConnectors()).sort(compareIgnoreCase);
 	const ulElement = document.querySelector(CONNECTORS_LIST_ID);
+
 	for (const connector of connectors) {
 		const liElement = document.createElement('li');
-		const textNode = document.createTextNode(connector.label)
+		const textNode = document.createTextNode(connector)
 
 		liElement.appendChild(textNode);
 		ulElement.appendChild(liElement);
@@ -42,8 +41,8 @@ async function getConnectors() {
 	return connectors;
 }
 
-function sortByLabel(a, b) {
-	return a.label.localeCompare(b.label);
+function compareIgnoreCase(a, b) {
+    return a.toLowerCase().localeCompare(b.toLowerCase());
 }
 
 document.addEventListener("DOMContentLoaded", onDomContentLoaded);

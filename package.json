@@ -1,0 +1,20 @@
+{
+  "name": "web-scrobbler.github.io",
+  "version": "1.0.0",
+  "author": "Web Scrobbler team",
+  "description": "Web Scrobbler website",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/web-scrobbler/web-scrobbler.github.io"
+  },
+  "devDependencies": {
+    "node-define": "^0.1.1",
+    "node-fetch": "^2.6.0",
+    "requirejs": "^2.3.6"
+  },
+  "engines": {
+    "node": ">=10.0.0"
+  },
+  "license": "MIT"
+}

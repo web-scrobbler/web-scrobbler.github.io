@@ -1,0 +1,34 @@
+name: resources
+on: repository_dispatch
+jobs:
+  resources:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - uses: borales/actions-yarn@v2.0.0
+      with:
+        cmd: install
+    - name: Update resources
+      run: |
+        node scripts/dump-connectors.js $TAG
+      env:
+        TAG: ${{ github.event.action }}
+    - name: Push changes
+      run: |
+        REMOTE_URL="https://$GH_USER_NAME:$GH_FA_TOKEN@github.com/$GITHUB_REPOSITORY.git"
+
+        git config user.email "$GH_USER_EMAIL"
+        git config user.name "$GH_USER_NAME"
+
+        if [[ `git status --porcelain` ]]; then
+          git add resources/connectors.json
+          git commit -m 'Update connectors.json'
+          git remote set-url origin $REMOTE_URL
+          git push origin HEAD:master
+        else
+          echo No changes to push
+        fi
+      env:
+        GH_USER_EMAIL: ${{ secrets.GH_USER_EMAIL }}
+        GH_USER_NAME: ${{ secrets.GH_USER_NAME }}
+        GH_FA_TOKEN: ${{ secrets.GH_FA_TOKEN }}

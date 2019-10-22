@@ -1,6 +1,6 @@
 'use strict';
 
-const CONNECTORS_URL = 'https://raw.githubusercontent.com/web-scrobbler/web-scrobbler/master/media/connectors.json';
+const CONNECTORS_URL = 'https://web-scrobbler.github.io/resources/connectors.json';
 
 const VIEW_LINK_ID = '#view-connectors';
 const CONNECTORS_LIST_ID = '#connectors';

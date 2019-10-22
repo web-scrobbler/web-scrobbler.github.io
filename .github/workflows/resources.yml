@@ -8,6 +8,18 @@ jobs:
     - uses: borales/actions-yarn@v2.0.0
       with:
         cmd: install
+    - name: Setup git
+      run: |
+        REMOTE_URL="https://$GH_USER_NAME:$GH_FA_TOKEN@github.com/$GITHUB_REPOSITORY.git"
+
+        git config user.email "$GH_USER_EMAIL"
+        git config user.name "$GH_USER_NAME"
+
+        git checkout .
+      env:
+        GH_USER_EMAIL: ${{ secrets.GH_USER_EMAIL }}
+        GH_USER_NAME: ${{ secrets.GH_USER_NAME }}
+        GH_FA_TOKEN: ${{ secrets.GH_FA_TOKEN }}
     - name: Update resources
       run: |
         node scripts/dump-connectors.js $TAG
@@ -15,11 +27,6 @@ jobs:
         TAG: ${{ github.event.action }}
     - name: Push changes
       run: |
-        REMOTE_URL="https://$GH_USER_NAME:$GH_FA_TOKEN@github.com/$GITHUB_REPOSITORY.git"
-
-        git config user.email "$GH_USER_EMAIL"
-        git config user.name "$GH_USER_NAME"
-
         if [[ `git status --porcelain` ]]; then
           git add resources/connectors.json
           git commit -m 'Update connectors.json'
@@ -28,7 +35,3 @@ jobs:
         else
           echo No changes to push
         fi
-      env:
-        GH_USER_EMAIL: ${{ secrets.GH_USER_EMAIL }}
-        GH_USER_NAME: ${{ secrets.GH_USER_NAME }}
-        GH_FA_TOKEN: ${{ secrets.GH_FA_TOKEN }}

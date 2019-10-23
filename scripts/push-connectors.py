@@ -8,12 +8,19 @@ MAIN_BRANCH = 'master'
 LOCAL_FILE = 'resources/connectors.json'
 REMOTE_FILE = '/resources/connectors.json'
 
+GH_FA_TOKEN = 'GH_FA_TOKEN'
+GITHUB_REPOSITORY = 'GITHUB_REPOSITORY'
+
 
 def main(args):
-    version = args[1]
+    if GH_FA_TOKEN not in os.environ:
+        print("Error: Missing GitHub token")
+        return 1
 
-    token = os.environ['GH_FA_TOKEN']
-    repo = os.environ['GITHUB_REPOSITORY']
+    token = os.environ[GH_FA_TOKEN]
+    repo = os.environ[GITHUB_REPOSITORY]
+
+    version = args[1]
     commit_msg = \
         'Update resources\n\nUse connectors.json from {0}.'.format(version)
 
@@ -21,7 +28,11 @@ def main(args):
         contents = f.read()
 
     github = github3.login(token=token)
-    repository = github.repository(*repo.split('/'))
+    try:
+        repository = github.repository(*repo.split('/'))
+    except github3.exceptions.AuthenticationFailed:
+        print("Error: Invalid GitHub token")
+        return 1
 
     connectors_file = repository.file_contents(
         REMOTE_FILE, ref=MAIN_BRANCH)

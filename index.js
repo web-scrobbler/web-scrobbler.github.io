@@ -17,7 +17,7 @@ function initControls() {
 
 		const ulElement = document.querySelector(CONNECTORS_LIST_ID);
 		ulElement.classList.remove('hidden');
-		aElement.classList.add("hidden");
+		aElement.classList.add('hidden');
 	});
 }
 
@@ -27,7 +27,7 @@ async function updateConnectors() {
 
 	for (const connector of connectors) {
 		const liElement = document.createElement('li');
-		const textNode = document.createTextNode(connector)
+		const textNode = document.createTextNode(connector);
 
 		liElement.appendChild(textNode);
 		ulElement.appendChild(liElement);
@@ -42,7 +42,7 @@ async function getConnectors() {
 }
 
 function compareIgnoreCase(a, b) {
-    return a.toLowerCase().localeCompare(b.toLowerCase());
+	return a.toLowerCase().localeCompare(b.toLowerCase());
 }
 
-document.addEventListener("DOMContentLoaded", onDomContentLoaded);
+document.addEventListener('DOMContentLoaded', onDomContentLoaded);

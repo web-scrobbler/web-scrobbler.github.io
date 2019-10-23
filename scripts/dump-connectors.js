@@ -25,7 +25,7 @@ async function main(args) {
 		await dumpConnectors();
 
 		console.log(`Dumped connectors from ${latestTag} release.`);
-	} catch {
+	} catch (e) {
 		console.error(`Unable to dump connectors from ${latestTag} release.`);
 
 		exitCode = 1;

@@ -9,6 +9,8 @@
     "url": "https://github.com/web-scrobbler/web-scrobbler.github.io"
   },
   "devDependencies": {
+    "eslint": "^6.5.1",
+    "eslint-plugin-jsdoc": "^15.0.0",
     "node-define": "^0.1.1",
     "node-fetch": "^2.6.0",
     "requirejs": "^2.3.6"

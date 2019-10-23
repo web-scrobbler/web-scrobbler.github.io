@@ -3,35 +3,21 @@ on: repository_dispatch
 jobs:
   resources:
     runs-on: ubuntu-latest
+    env:
+      VERSION: ${{ github.event.action }}
     steps:
     - uses: actions/checkout@v1
     - uses: borales/actions-yarn@v2.0.0
       with:
         cmd: install
-    - name: Setup git
+    - name: Install dependencies
       run: |
-        REMOTE_URL="https://$GH_USER_NAME:$GH_FA_TOKEN@github.com/$GITHUB_REPOSITORY.git"
-
-        git config user.email "$GH_USER_EMAIL"
-        git config user.name "$GH_USER_NAME"
-
-        git checkout .
-      env:
-        GH_USER_EMAIL: ${{ secrets.GH_USER_EMAIL }}
-        GH_USER_NAME: ${{ secrets.GH_USER_NAME }}
-        GH_FA_TOKEN: ${{ secrets.GH_FA_TOKEN }}
+        pip install -r requirements.txt
     - name: Update resources
       run: |
-        node scripts/dump-connectors.js $TAG
-      env:
-        TAG: ${{ github.event.action }}
+        node scripts/dump-connectors.js $VERSION
     - name: Push changes
       run: |
-        if [[ `git status --porcelain` ]]; then
-          git add resources/connectors.json
-          git commit -m 'Update connectors.json'
-          git remote set-url origin $REMOTE_URL
-          git push origin HEAD:master
-        else
-          echo No changes to push
-        fi
+        python scripts/push-connectors.py $VERSION
+      env:
+        GH_FA_TOKEN: ${{ secrets.GH_FA_TOKEN }}

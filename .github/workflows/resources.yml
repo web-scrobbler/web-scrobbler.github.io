@@ -1,7 +1,8 @@
-name: resources
+name: Resources
 on: repository_dispatch
 jobs:
   resources:
+    name: Update resources
     runs-on: ubuntu-latest
     env:
       VERSION: ${{ github.event.action }}
@@ -17,7 +18,7 @@ jobs:
       run: |
         npm install
         pip install -r requirements.txt
-    - name: Update resources
+    - name: Fetch resources
       run: |
         node scripts/dump-connectors.js $VERSION
     - name: Push changes

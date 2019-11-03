@@ -4,9 +4,14 @@ jobs:
   lint:
     runs-on: ubuntu-latest
     steps:
+    - name: Read .nvmrc
+      run: echo ::set-output name=nvmrc::$(cat .nvmrc)
+      id: nvm
     - uses: actions/checkout@v1
-    - uses: borales/actions-yarn@v2.0.0
+    - uses: actions/setup-node@v1
       with:
-        cmd: install
+        node-version: '${{ steps.nvm.outputs.nvmrc }}'
+    - name: Install dependencies
+      run: npm install
     - name: Run linters
-      run: yarn run eslint **/*.js
+      run: npx eslint **/*.js

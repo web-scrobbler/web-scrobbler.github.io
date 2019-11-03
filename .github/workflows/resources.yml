@@ -6,12 +6,16 @@ jobs:
     env:
       VERSION: ${{ github.event.action }}
     steps:
+    - name: Read .nvmrc
+      run: echo ::set-output name=nvmrc::$(cat .nvmrc)
+      id: nvm
     - uses: actions/checkout@v1
-    - uses: borales/actions-yarn@v2.0.0
+    - uses: actions/setup-node@v1
       with:
-        cmd: install
+        node-version: '${{ steps.nvm.outputs.nvmrc }}'
     - name: Install dependencies
       run: |
+        npm install
         pip install -r requirements.txt
     - name: Update resources
       run: |

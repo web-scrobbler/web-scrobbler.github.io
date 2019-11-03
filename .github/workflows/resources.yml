@@ -15,14 +15,15 @@ jobs:
       with:
         node-version: '${{ steps.nvm.outputs.nvmrc }}'
     - name: Install dependencies
-      run: |
-        npm install
-        pip install -r requirements.txt
+      run: npm install
     - name: Fetch resources
-      run: |
-        node scripts/dump-connectors.js $VERSION
-    - name: Push changes
-      run: |
-        python scripts/push-connectors.py $VERSION
-      env:
-        GH_FA_TOKEN: ${{ secrets.GH_FA_TOKEN }}
+      run: node scripts/dump-connectors.js $VERSION
+    - name: Update resources
+      uses: alexesprit/action-update-file@v0.1.1
+      with:
+        file-path: resources/connectors.json
+        commit-msg: |
+          Update resources
+
+          Update connectors.json to match ${{ github.event.action }} version.
+        github-token: ${{ secrets.GH_FA_TOKEN }}

@@ -19,7 +19,7 @@ jobs:
     - name: Fetch resources
       run: node scripts/dump-connectors.js $VERSION
     - name: Update resources
-      uses: alexesprit/action-update-file@v0.1.1
+      uses: alexesprit/action-update-file@master
       with:
         file-path: resources/connectors.json
         commit-msg: |

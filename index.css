@@ -25,15 +25,17 @@ body {
     margin: auto;
 }
 
+.center {
+	text-align: center;
+}
+
 .name {
-    /* font-style: italic; */
     font-size: 2em;
     font-weight: bold;
     margin-top: 6px;
 }
 
 .tagline {
-    /* font-style: italic; */
     font-size: 1.2em;
     margin-top: 6px;
 }
@@ -50,8 +52,12 @@ body {
 	text-decoration: none;
 }
 
+.support {
+	margin-top: 32px;
+}
+
 .footer {
-    margin-top: 50px;
+    margin-top: 32px;
     color: #666;
 }
 

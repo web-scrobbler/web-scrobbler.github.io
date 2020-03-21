@@ -4,6 +4,7 @@ const CONNECTORS_URL = 'https://raw.githubusercontent.com/web-scrobbler/website-
 
 const VIEW_LINK_ID = '#view-connectors';
 const CONNECTORS_LIST_ID = '#connectors';
+const CONNECTOR_COUNT_ID = '#connectors-count'
 
 function onDomContentLoaded() {
 	initControls();
@@ -24,6 +25,9 @@ function initControls() {
 async function updateConnectors() {
 	const connectors = (await getConnectors()).sort(compareIgnoreCase);
 	const ulElement = document.querySelector(CONNECTORS_LIST_ID);
+
+	const connectorsCount = document.querySelector(CONNECTOR_COUNT_ID);
+	connectorsCount.innerHTML = connectors.length
 
 	for (const connector of connectors) {
 		const liElement = document.createElement('li');

@@ -1,28 +1,28 @@
 a {
-    text-decoration: none;
+	text-decoration: none;
 }
 a:hover {
-    text-decoration: underline;
+	text-decoration: underline;
 }
 
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  font-size: 1rem;
-  font-weight: normal;
-  line-height: 1.5;
-  color: #212529;
-  background-color: #fff;
+	background-color: #fff;
+	color: #212529;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+	font-size: 1rem;
+	font-weight: normal;
+	line-height: 1.5;
+	margin: 0;
 }
 
 .logo {
-    border-radius: 50%;
+	border-radius: 50%;
 }
 
 .container {
-    padding: 20px;
-    max-width: 500px;
-    margin: auto;
+	margin: auto;
+	max-width: 500px;
+	padding: 20px;
 }
 
 .center {
@@ -30,22 +30,22 @@ body {
 }
 
 .name {
-    font-size: 2em;
-    font-weight: bold;
-    margin-top: 6px;
+	font-size: 2em;
+	font-weight: bold;
+	margin-top: 6px;
 }
 
 .tagline {
-    font-size: 1.2em;
-    margin-top: 6px;
+	font-size: 1.2em;
+	margin-top: 6px;
 }
 
 .badge-container {
-    margin-top: 16px;
+	margin-top: 16px;
 }
 
 .badge {
-    padding: 2px;
+	padding: 2px;
 }
 
 .badge a {
@@ -57,8 +57,8 @@ body {
 }
 
 .footer {
-    margin-top: 32px;
-    color: #666;
+	color: #666;
+	margin-top: 32px;
 }
 
 .hidden {
@@ -66,5 +66,5 @@ body {
 }
 
 #connectors-count {
-    font-weight: bold;
+	font-weight: bold;
 }

@@ -15,6 +15,6 @@ jobs:
     - name: Install dependencies
       run: npm install
     - name: Run linters
-			run: |
-				npx eslint **/*.js
-				npx stylelint **/*.css
+      run: |
+        npx eslint **/*.js
+        npx stylelint **/*.css

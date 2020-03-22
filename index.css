@@ -65,6 +65,6 @@ body {
 	display: none;
 }
 
-#connectors-count {
+.counter {
 	font-weight: bold;
 }

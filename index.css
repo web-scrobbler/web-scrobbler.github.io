@@ -15,10 +15,6 @@ body {
 	margin: 0;
 }
 
-.logo {
-	border-radius: 50%;
-}
-
 .container {
 	margin: auto;
 	max-width: 500px;

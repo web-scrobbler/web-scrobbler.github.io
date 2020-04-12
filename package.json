@@ -13,7 +13,7 @@
     "eslint": "^6.5.1",
     "eslint-config-web-scrobbler": "^0.1.0",
     "stylelint": "13.2.1",
-    "stylelint-order": "4.0.0"
+    "stylelint-config-web-scrobbler": "^0.1.0"
   },
   "engines": {
     "node": ">=12.0.0"

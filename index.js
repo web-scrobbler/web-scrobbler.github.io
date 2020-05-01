@@ -2,9 +2,9 @@
 
 const CONNECTORS_URL = 'https://raw.githubusercontent.com/web-scrobbler/website-resources/master/resources/connectors.json';
 
-const VIEW_LINK_ID = '#view-connectors';
-const CONNECTORS_LIST_ID = '#connectors';
-const CONNECTOR_COUNT_ID = '#connectors-count';
+const viewLinkId = 'view-connectors';
+const connectorsListId = 'connectors';
+const connectorCountId = 'connectors-count';
 
 function onDomContentLoaded() {
 	initControls();
@@ -12,11 +12,11 @@ function onDomContentLoaded() {
 }
 
 function initControls() {
-	const aElement = document.querySelector(VIEW_LINK_ID);
+	const aElement = document.getElementById(viewLinkId);
 	aElement.addEventListener('click', (e) => {
 		e.preventDefault();
 
-		const ulElement = document.querySelector(CONNECTORS_LIST_ID);
+		const ulElement = document.getElementById(connectorsListId);
 		ulElement.classList.remove('hidden');
 		aElement.classList.add('hidden');
 	});
@@ -24,9 +24,9 @@ function initControls() {
 
 async function updateConnectors() {
 	const connectors = (await getConnectors()).sort(compareIgnoreCase);
-	const ulElement = document.querySelector(CONNECTORS_LIST_ID);
+	const ulElement = document.getElementById(connectorsListId);
 
-	const connectorsCount = document.querySelector(CONNECTOR_COUNT_ID);
+	const connectorsCount = document.getElementById(connectorCountId);
 	connectorsCount.innerHTML = connectors.length;
 
 	for (const connector of connectors) {

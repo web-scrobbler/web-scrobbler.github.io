@@ -57,10 +57,6 @@ body {
 	margin-top: 32px;
 }
 
-.hidden {
-	display: none;
-}
-
 .counter {
 	font-weight: bold;
 }

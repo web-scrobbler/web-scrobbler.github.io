@@ -17,8 +17,8 @@ function initControls() {
 		e.preventDefault();
 
 		const ulElement = document.getElementById(connectorsListId);
-		ulElement.classList.remove('hidden');
-		aElement.classList.add('hidden');
+		ulElement.hidden = false;
+		aElement.hidden = true;
 	});
 }
 

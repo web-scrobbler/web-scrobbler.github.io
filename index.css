@@ -54,11 +54,29 @@ body {
 
 .footer {
 	color: #666;
-	margin-top: 32px;
+	padding: 8px;
 }
 
 .counter {
 	font-weight: bold;
+}
+
+.contacts {
+	margin-bottom: 4px;
+}
+
+.contacts a {
+	margin-left: 4px;
+	margin-right: 4px;
+	text-decoration: none;
+}
+
+.contacts .twitter {
+	color: #1da1f2;
+}
+
+.contacts .github {
+	color: #000;
 }
 
 /*

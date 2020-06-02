@@ -12,13 +12,9 @@ body {
 	font-size: 1rem;
 	font-weight: normal;
 	line-height: 1.5;
-	margin: 0;
-}
-
-.container {
 	margin: auto;
 	max-width: 500px;
-	padding: 20px;
+	padding: 32px;
 }
 
 .center {
@@ -51,7 +47,7 @@ body {
 
 .footer {
 	color: #666;
-	padding: 8px;
+	margin-top: 32px;
 }
 
 .counter {
@@ -59,7 +55,7 @@ body {
 }
 
 .contacts {
-	margin-bottom: 4px;
+	margin-bottom: 8px;
 }
 
 .contacts a {

@@ -17,6 +17,12 @@ body {
 	padding: 32px;
 }
 
+h1, h2, h3, h4, h5, h6 {
+	border-bottom: 1px solid #eaecef;
+	font-weight: 600;
+	padding-bottom: 0.3rem;
+}
+
 .center {
 	text-align: center;
 }

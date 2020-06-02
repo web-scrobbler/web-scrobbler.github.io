@@ -71,6 +71,10 @@ body {
 	text-decoration: none;
 }
 
+.contacts .email {
+	color: #0071c5;
+}
+
 .contacts .twitter {
 	color: #1da1f2;
 }

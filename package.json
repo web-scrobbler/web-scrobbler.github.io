@@ -29,6 +29,7 @@
       "browser": true
     }
   },
+  "prettier": "prettier-config-web-scrobbler",
   "stylelint": {
     "extends": "stylelint-config-web-scrobbler"
   }

@@ -40,11 +40,8 @@ body {
 	margin-top: 16px;
 }
 
-.badge {
+.badge-container a {
 	padding: 2px;
-}
-
-.badge a {
 	text-decoration: none;
 }
 

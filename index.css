@@ -86,16 +86,9 @@ h1, h2, h3, h4, h5, h6 {
 	text-decoration: none;
 }
 
-.contacts .email {
-	color: #0071c5;
-}
-
-.contacts .twitter {
-	color: #1da1f2;
-}
-
-.contacts .github {
-	color: #000;
+.contacts svg {
+	height: 2rem;
+	width: 2rem;
 }
 
 /*

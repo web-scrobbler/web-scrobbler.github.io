@@ -10,7 +10,7 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "eslint": "7.3.1",
+    "eslint": "7.4.0",
     "eslint-config-web-scrobbler": "0.5.0",
     "html-validate": "3.0.0",
     "prettier-config-web-scrobbler": "0.1.0",

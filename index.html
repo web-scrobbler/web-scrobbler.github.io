@@ -1,140 +1,506 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<head>
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, shrink-to-fit=no"
+		/>
 
-	<!-- Primary Meta Tags -->
-	<title>Web Scrobbler — Scrobble music all around the web!</title>
-	<meta name="title" content="Web Scrobbler — Scrobble music all around the web!">
-	<meta name="description" content="Web Scrobbler helps music listeners to scrobble their online playback history.">
+		<!-- Primary Meta Tags -->
+		<title>Web Scrobbler — Scrobble music all around the web!</title>
+		<meta
+			name="title"
+			content="Web Scrobbler — Scrobble music all around the web!"
+		/>
+		<meta
+			name="description"
+			content="Web Scrobbler helps music listeners to scrobble their online playback history."
+		/>
 
-	<!-- Open Graph / Facebook -->
-	<meta property="og:type" content="website">
-	<meta property="og:url" content="https://web-scrobbler.com/">
-	<meta property="og:title" content="Web Scrobbler — Scrobble music all around the web!">
-	<meta property="og:description" content="Web Scrobbler helps music listeners to scrobble their online playback history.">
-	<meta property="og:image" content="https://raw.githubusercontent.com/web-scrobbler/media-resources/master/images/social-media-preview.png">
+		<!-- Open Graph / Facebook -->
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="https://web-scrobbler.com/" />
+		<meta
+			property="og:title"
+			content="Web Scrobbler — Scrobble music all around the web!"
+		/>
+		<meta
+			property="og:description"
+			content="Web Scrobbler helps music listeners to scrobble their online playback history."
+		/>
+		<meta
+			property="og:image"
+			content="https://raw.githubusercontent.com/web-scrobbler/media-resources/master/images/social-media-preview.png"
+		/>
 
-	<!-- Twitter -->
-	<meta property="twitter:card" content="summary_large_image">
-	<meta property="twitter:url" content="https://web-scrobbler.com/">
-	<meta property="twitter:title" content="Web Scrobbler — Scrobble music all around the web!">
-	<meta property="twitter:description" content="Web Scrobbler helps music listeners to scrobble their online playback history.">
-	<meta property="twitter:image" content="https://raw.githubusercontent.com/web-scrobbler/media-resources/master/images/social-media-preview.png">
+		<!-- Twitter -->
+		<meta property="twitter:card" content="summary_large_image" />
+		<meta property="twitter:url" content="https://web-scrobbler.com/" />
+		<meta
+			property="twitter:title"
+			content="Web Scrobbler — Scrobble music all around the web!"
+		/>
+		<meta
+			property="twitter:description"
+			content="Web Scrobbler helps music listeners to scrobble their online playback history."
+		/>
+		<meta
+			property="twitter:image"
+			content="https://raw.githubusercontent.com/web-scrobbler/media-resources/master/images/social-media-preview.png"
+		/>
 
-	<link rel="stylesheet" href="index.css">
+		<link rel="stylesheet" href="index.css" />
 
-	<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="images/favicon-32x32.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="images/favicon-16x16.png"
+		/>
 
-	<link rel="shortcut icon" href="/images/favicon.ico">
+		<link rel="shortcut icon" href="images/favicon.ico" />
 
-	<script src="index.js"></script>
-</head>
+		<script src="index.js"></script>
+	</head>
 
-<body>
-	<a href="https://github.com/web-scrobbler/web-scrobbler" class="github-corner" aria-label="View source on GitHub">
-		<svg focusable="false" width="80" height="80" viewBox="0 0 250 250" aria-hidden="true">
-			<path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
-			<path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
-			<path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path>
+	<body>
+		<svg
+			aria-hidden="true"
+			focusable="false"
+			xmlns:xlink="http://www.w3.org/1999/xlink"
+			xmlns="http://www.w3.org/2000/svg"
+			hidden
+		>
+			<symbol
+				fill="currentColor"
+				id="chrome"
+				viewBox="0 0 24 24"
+				xmlns="http://www.w3.org/2000/svg"
+			>
+				<path
+					d="M16.214 8.69l6.715-1.679A12.027 12.027 0 0 1 24 11.972C24 18.57 18.569 24 11.968 24c-.302 0-.605-.011-.907-.034l4.905-8.347c.356-.376.655-.803.881-1.271a5.451 5.451 0 0 0-.043-4.748 5.156 5.156 0 0 0-.59-.91zm-3.24 8.575l-2.121 6.682C4.738 23.345 0 18.14 0 11.977 0 9.592.709 7.26 2.038 5.279l4.834 8.377c.18.539 1.119 2.581 3.067 3.327.998.382 2.041.481 3.035.282zM11.973 7.62c-2.006.019-3.878 1.544-4.281 3.512a4.478 4.478 0 0 0 1.237 4.032c1.214 1.186 3.14 1.578 4.734.927 1.408-.576 2.47-1.927 2.691-3.431.272-1.856-.788-3.832-2.495-4.629a4.413 4.413 0 0 0-1.886-.411zM7.046 9.962L2.259 4.963A12.043 12.043 0 0 1 11.997 0c4.56 0 8.744 2.592 10.774 6.675H12.558c-1.811-.125-3.288.52-4.265 1.453a5.345 5.345 0 0 0-1.247 1.834z"
+				></path>
+			</symbol>
+			<symbol
+				fill="currentColor"
+				id="firefox"
+				viewBox="0 0 24 24"
+				xmlns="http://www.w3.org/2000/svg"
+			>
+				<path
+					d="M8.855 7.333c.008 0 .004 0 0 0zM6.082 5.947c.007 0 .004 0 0 0zm16.59 2.14c-.5-1.203-1.514-2.503-2.31-2.914.648 1.27 1.023 2.544 1.166 3.495l.002.02c-1.302-3.246-3.51-4.555-5.314-7.404-.09-.145-.182-.289-.27-.441a3.51 3.51 0 01-.128-.238 2.097 2.097 0 01-.171-.456.03.03 0 00-.027-.03.038.038 0 00-.021 0l-.006.002a.037.037 0 00-.009.005.038.038 0 01.005-.007c-2.56 1.5-3.622 4.126-3.894 5.797a6.136 6.136 0 00-2.282.582.294.294 0 00-.146.366.29.29 0 00.392.169 5.567 5.567 0 011.988-.519l.067-.005A5.636 5.636 0 0112 6.5a5.79 5.79 0 011.652.229l.094.03a5.757 5.757 0 01.265.088 5.839 5.839 0 01.191.075c.052.02.103.041.154.063a5.676 5.676 0 01.235.111l.106.054a5.776 5.776 0 01.224.123 5.165 5.165 0 01.141.086 5.895 5.895 0 012.014 2.083c-.615-.432-1.716-.859-2.776-.674 4.142 2.07 3.03 9.201-2.71 8.932a5.113 5.113 0 01-1.498-.29 6.347 6.347 0 01-.339-.137 4.37 4.37 0 01-.194-.093c-1.406-.727-2.567-2.1-2.712-3.768 0 0 .531-1.981 3.806-1.981.354 0 1.366-.988 1.385-1.274-.005-.094-2.009-.891-2.79-1.66-.418-.412-.616-.61-.791-.76a3.436 3.436 0 00-.299-.225 5.335 5.335 0 01-.032-2.814c-1.183.539-2.103 1.39-2.772 2.142h-.006c-.456-.578-.424-2.486-.398-2.884-.006-.025-.34.174-.385.204a8.395 8.395 0 00-1.125.964 10.086 10.086 0 00-1.075 1.29v0A9.72 9.72 0 00.819 9.9c-.003.013-.11.482-.188 1.062a12.736 12.736 0 00-.037.27 7.724 7.724 0 00-.068.66l-.002.034a28.326 28.326 0 00-.023.383l-.001.06c0 6.358 5.156 11.513 11.516 11.513 5.695 0 10.424-4.135 11.35-9.566.02-.147.035-.295.052-.444.23-1.974-.025-4.05-.746-5.786zm-7.862 3.455z"
+				></path>
+			</symbol>
+			<symbol
+				fill="currentColor"
+				id="discord"
+				viewBox="0 0 24 24"
+				xmlns="http://www.w3.org/2000/svg"
+			>
+				<path
+					d="M20.222 0c1.406 0 2.54 1.137 2.607 2.475V24l-2.677-2.273-1.47-1.338-1.604-1.398.67 2.205H3.71c-1.402 0-2.54-1.065-2.54-2.476V2.48C1.17 1.142 2.31.003 3.715.003h16.5L20.222 0zm-6.118 5.683h-.03l-.202.2c2.073.6 3.076 1.537 3.076 1.537-1.336-.668-2.54-1.002-3.744-1.137-.87-.135-1.74-.064-2.475 0h-.2c-.47 0-1.47.2-2.81.735-.467.203-.735.336-.735.336s1.002-1.002 3.21-1.537l-.135-.135s-1.672-.064-3.477 1.27c0 0-1.805 3.144-1.805 7.02 0 0 1 1.74 3.743 1.806 0 0 .4-.533.805-1.002-1.54-.468-2.14-1.404-2.14-1.404s.134.066.335.2h.06c.03 0 .044.015.06.03v.006c.016.016.03.03.06.03.33.136.66.27.93.4.466.202 1.065.403 1.8.536.93.135 1.996.2 3.21 0 .6-.135 1.2-.267 1.8-.535.39-.2.87-.4 1.397-.737 0 0-.6.936-2.205 1.404.33.466.795 1 .795 1 2.744-.06 3.81-1.8 3.87-1.726 0-3.87-1.815-7.02-1.815-7.02-1.635-1.214-3.165-1.26-3.435-1.26l.056-.02zm.168 4.413c.703 0 1.27.6 1.27 1.335 0 .74-.57 1.34-1.27 1.34-.7 0-1.27-.6-1.27-1.334.002-.74.573-1.338 1.27-1.338zm-4.543 0c.7 0 1.266.6 1.266 1.335 0 .74-.57 1.34-1.27 1.34-.7 0-1.27-.6-1.27-1.334 0-.74.57-1.338 1.27-1.338z"
+				></path>
+			</symbol>
+			<symbol
+				fill="currentColor"
+				id="at"
+				viewBox="0 0 16 16"
+				xmlns="http://www.w3.org/2000/svg"
+			>
+				<path
+					d="M 16,7.0562664 C 16,2.8957055 12.766355,0 8.1179008,0 3.3012221,0 0,3.250482 0,7.9957932 0,12.893953 3.2135155,16 8.2846873,16 9.5240834,16 10.713156,15.82752 11.597412,15.530237 l 0,-1.208765 c -0.61826,0.279054 -1.9468009,0.459948 -3.2925953,0.459948 -4.2070453,0 -6.9202013,-2.636284 -6.9202013,-6.7281334 0,-3.9880806 2.7620417,-6.8445224 6.6053199,-6.8445224 3.9324227,0 6.6254497,2.3670465 6.6254497,5.8278703 0,2.3586328 -0.79655,3.8829095 -2.035946,3.8829095 -0.707404,0 -1.109993,-0.392638 -1.109993,-1.0657316 l 0,-5.6245398 -1.4838241,0 0,1.1695004 -0.1581596,0 C 9.4450036,4.5644172 8.5607477,4.0469763 7.526959,4.0469763 c -2.0129403,0 -3.4191229,1.6294479 -3.4191229,3.9586328 0,2.4357579 1.3759885,4.0750219 3.4205607,4.0750219 1.1502517,0 2.0345076,-0.546889 2.4572251,-1.524277 l 0.1581591,0 c 0.116463,0.939527 1.010784,1.609816 2.161036,1.609816 C 14.565061,12.16617 16,10.181946 16,7.0576687 Z M 5.6808052,8.0434706 c 0,-1.6785276 0.7764198,-2.6741454 2.0934579,-2.6741454 1.3371675,0 2.1912294,1.0348816 2.1912294,2.6741454 0,1.6392638 -0.8641266,2.6839614 -2.2113588,2.6839614 -1.286844,0 -2.0733285,-1.016652 -2.0733285,-2.6839614 z"
+				></path>
+			</symbol>
+			<symbol
+				id="github"
+				viewBox="0 0 24 24"
+				xmlns="http://www.w3.org/2000/svg"
+				fill="currentColor"
+			>
+				<path
+					d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+				></path>
+			</symbol>
+			<symbol
+				fill="currentColor"
+				id="twitter"
+				viewBox="0 0 24 24"
+				xmlns="http://www.w3.org/2000/svg"
+			>
+				<path
+					d="M23.954 4.569c-.885.389-1.83.654-2.825.775 1.014-.611 1.794-1.574 2.163-2.723-.951.555-2.005.959-3.127 1.184-.896-.959-2.173-1.559-3.591-1.559-2.717 0-4.92 2.203-4.92 4.917 0 .39.045.765.127 1.124C7.691 8.094 4.066 6.13 1.64 3.161c-.427.722-.666 1.561-.666 2.475 0 1.71.87 3.213 2.188 4.096-.807-.026-1.566-.248-2.228-.616v.061c0 2.385 1.693 4.374 3.946 4.827-.413.111-.849.171-1.296.171-.314 0-.615-.03-.916-.086.631 1.953 2.445 3.377 4.604 3.417-1.68 1.319-3.809 2.105-6.102 2.105-.39 0-.779-.023-1.17-.067 2.189 1.394 4.768 2.209 7.557 2.209 9.054 0 13.999-7.496 13.999-13.986 0-.209 0-.42-.015-.63.961-.689 1.8-1.56 2.46-2.548l-.047-.02z"
+				></path>
+			</symbol>
+			<symbol
+				fill="currentColor"
+				id="features"
+				viewBox="0 0 16 16"
+				xmlns="http://www.w3.org/2000/svg"
+			>
+				<path
+					fill-rule="evenodd"
+					d="M14.5 3h-13a.5.5 0 0 0-.5.5v9a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13z"
+				/>
+				<path
+					fill-rule="evenodd"
+					d="M7 5.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm-1.496-.854a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 1 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0zM7 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm-1.496-.854a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 0 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0z"
+				/>
+			</symbol>
+			<symbol
+				fill="currentColor"
+				id="globe"
+				viewBox="0 0 16 16"
+				xmlns="http://www.w3.org/2000/svg"
+			>
+				<path
+					fill-rule="evenodd"
+					d="M1.018 7.5h2.49c.037-1.07.189-2.087.437-3.008a9.124 9.124 0 0 1-1.565-.667A6.964 6.964 0 0 0 1.018 7.5zM3.05 3.049c.362.184.763.349 1.198.49.142-.384.304-.744.481-1.078a6.7 6.7 0 0 1 .597-.933A7.01 7.01 0 0 0 3.051 3.05zM8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm-.5 1.077c-.67.204-1.335.82-1.887 1.855-.143.268-.276.56-.395.872.705.157 1.473.257 2.282.287V1.077zm0 4.014c-.91-.03-1.783-.145-2.591-.332a12.344 12.344 0 0 0-.4 2.741H7.5V5.091zm1 2.409V5.091c.91-.03 1.783-.145 2.591-.332.223.827.364 1.754.4 2.741H8.5zm-1 1H4.51c.035.987.176 1.914.399 2.741A13.596 13.596 0 0 1 7.5 10.91V8.5zm1 2.409V8.5h2.99a12.343 12.343 0 0 1-.399 2.741A13.596 13.596 0 0 0 8.5 10.91zm-1 1c-.81.03-1.577.13-2.282.287.12.312.252.604.395.872.552 1.035 1.218 1.65 1.887 1.855V11.91zm-2.173 2.563a6.695 6.695 0 0 1-.597-.933 8.857 8.857 0 0 1-.481-1.078 8.356 8.356 0 0 0-1.198.49 7.01 7.01 0 0 0 2.276 1.52zM2.38 12.175c.47-.258.995-.482 1.565-.667A13.36 13.36 0 0 1 3.508 8.5h-2.49a6.964 6.964 0 0 0 1.362 3.675zm8.293 2.297a7.01 7.01 0 0 0 2.275-1.521 8.353 8.353 0 0 0-1.197-.49 8.859 8.859 0 0 1-.481 1.078 6.688 6.688 0 0 1-.597.933zm.11-2.276A12.63 12.63 0 0 0 8.5 11.91v3.014c.67-.204 1.335-.82 1.887-1.855.143-.268.276-.56.395-.872zm1.272-.688c.57.185 1.095.409 1.565.667A6.964 6.964 0 0 0 14.982 8.5h-2.49a13.355 13.355 0 0 1-.437 3.008zm.437-4.008h2.49a6.963 6.963 0 0 0-1.362-3.675c-.47.258-.995.482-1.565.667.248.92.4 1.938.437 3.008zm-.74-3.96a8.854 8.854 0 0 0-.482-1.079 6.692 6.692 0 0 0-.597-.933c.857.355 1.63.875 2.275 1.521a8.368 8.368 0 0 1-1.197.49zm-.97.264c-.705.157-1.473.257-2.282.287V1.077c.67.204 1.335.82 1.887 1.855.143.268.276.56.395.872z"
+				/>
+			</symbol>
+			<symbol
+				fill="currentColor"
+				id="heart"
+				viewBox="0 0 16 16"
+				xmlns="http://www.w3.org/2000/svg"
+			>
+				<path
+					fill-rule="evenodd"
+					d="M8 2.748l-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"
+				/>
+			</symbol>
 		</svg>
-	</a>
 
-	<div class="center">
-		<img class="logo" src="images/icon-chrome-circle.png" srcset="images/icon-chrome-circle.svg" alt="Web Scrobbler logo" />
-		<div class="name">Web Scrobbler</div>
-		<div class="tagline">Scrobble music all around the web!</div>
-		<div class="badge-container">
-			<a title="Download on Chrome Web Store" href="https://chrome.google.com/webstore/detail/lastfm-scrobbler/hhinaapppaileiechjoiifaancjggfjm">
-				<img alt="Chrome Web Store" src="https://img.shields.io/chrome-web-store/v/hhinaapppaileiechjoiifaancjggfjm.svg?label=chrome&logo=google-chrome&logoColor=white" />
-			</a>
-			<a title="Download on Addons.mozilla.org" href="https://addons.mozilla.org/en-US/firefox/addon/web-scrobbler/">
-				<img alt="Addons.mozilla.org" src="https://img.shields.io/amo/v/web-scrobbler.svg?label=firefox&logo=firefox-browser&logoColor=white" />
-			</a>
-			<a title="Download on Microsoft Edge Addons" href="https://microsoftedge.microsoft.com/addons/detail/web-scrobbler/obiekdelmkmlgnhddmmnpnfhngejbnnc">
-				<img alt="Microsoft Edge Addons" src="https://img.shields.io/badge/dynamic/json?label=edge&logo=microsoft-edge&query=%24.version&url=https%3A%2F%2Fmicrosoftedge.microsoft.com%2Faddons%2Fgetproductdetailsbycrxid%2Fobiekdelmkmlgnhddmmnpnfhngejbnnc" />
-			</a>
-			<a title="View changelog on GitHub" href="https://github.com/web-scrobbler/web-scrobbler/releases/latest">
-				<img alt="GitHub release" src="https://img.shields.io/github/release/web-scrobbler/web-scrobbler.svg?label=github&logo=github&logoColor=white" />
-			</a>
+		<div class="header">
+			<div class="container center">
+				<img
+					class="header__logo"
+					src="images/icon-chrome-circle.png"
+					srcset="images/icon-chrome-circle.svg"
+					alt="Web Scrobbler logo"
+				/>
+				<div class="header__name header--row header--text">
+					Web Scrobbler
+				</div>
+				<div class="header__tagline header--text">
+					Scrobble music all around the web!
+				</div>
+
+				<div class="header--row header--text">
+					Web Scrobbler helps music listeners to scrobble their online
+					playback history.
+				</div>
+
+				<div class="header--row header--text">
+					<a
+						title="Download on Chrome Web Store"
+						href="https://chrome.google.com/webstore/detail/lastfm-scrobbler/hhinaapppaileiechjoiifaancjggfjm"
+					>
+						<svg
+							class="header__download-icon"
+							focusable="false"
+							role="img"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<use xlink:href="#chrome"></use>
+						</svg>
+					</a>
+					<a
+						title="Download on Addons.mozilla.org"
+						href="https://addons.mozilla.org/en-US/firefox/addon/web-scrobbler/"
+					>
+						<svg
+							class="header__download-icon"
+							focusable="false"
+							role="img"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<use xlink:href="#firefox"></use>
+						</svg>
+					</a>
+				</div>
+			</div>
 		</div>
-	</div>
-	<div>
-		<p>
-			Web Scrobbler helps music listeners to scrobble their online playback history.
-		</p>
 
-		<h2>Key features</h2>
-		<ul>
-			<li>
-				Support for <a href="https://www.last.fm/">Last.fm</a>, <a href="https://libre.fm/">Libre.fm</a>, and <a href="https://listenbrainz.org/">ListenBrainz</a>
-			</li>
-			<li>
-				Now playing notifications
-			</li>
-			<li>
-				Built-in track <a href="https://github.com/web-scrobbler/metadata-filter">metadata filter</a>
-			</li>
-			<li>
-				A lot of websites supported
-			</li>
-		</ul>
+		<div class="content bg">
+			<div class="container">
+				<h1 class="content__header center">Features</h1>
+				<div class="section">
+					<div class="section__description">
+						<div class="feature">
+							<div class="feature__item">
+								<h3 class="feature__title">
+									Multiple scrobbling services
+								</h3>
+								<p class="feature__description">
+									Scrobble your music to
+									<a
+										href="https://www.last.fm/"
+										target="_blank"
+									>
+										Last.fm</a
+									>,
+									<a href="https://libre.fm/" target="_blank">
+										Libre.fm</a
+									>, and
+									<a
+										href="https://listenbrainz.org/"
+										target="_blank"
+									>
+										ListenBrainz
+									</a>
+									scrobbling services.
+								</p>
+							</div>
+							<div class="feature__item">
+								<h3 class="feature__title">
+									Built-in metadata filter
+								</h3>
+								<p class="feature__description">
+									The
+									<a
+										href="https://github.com/web-scrobbler/metadata-filter"
+										target="_blank"
+									>
+										metadata filter
+									</a>
+									cleans track info up and removes redundant
+									track suffixes.
+								</p>
+							</div>
+							<div class="feature__item">
+								<h3 class="feature__title">
+									Now playing notifications
+								</h3>
+								<p class="feature__description">
+									Notifications of now playing tracks with
+									extended track info (a website name, a track
+									play count).
+								</p>
+							</div>
+							<div class="feature__item">
+								<h3 class="feature__title">
+									A lot of websites supported
+								</h3>
+								<p class="feature__description">
+									We currently support scrobbling to
+									<span
+										class="feature__counter"
+										id="websites-count"
+									></span>
+									different websites with more being added
+									with each release.
+								</p>
+							</div>
+							<div class="feature__item">
+								<h3 class="feature__title">
+									Powered by WebExtensions
+								</h3>
+								<p class="feature__description">
+									Available for Chrome, Chrome-based browsers
+									(Opera, Vivaldi, etc), and Firefox.
+								</p>
+							</div>
 
-		<h2>Browsers</h2>
-		<p>
-			The extension can be installed on Chrome, Chrome-based browsers (Opera, Vivaldi etc.), and Firefox.
-		</p>
-
-		<h2>Websites</h2>
-		<p>
-			We currently support scrobbling to <span class="counter" id="connectors-count"></span> different websites. With more being added with each release.
-		</p>
-		<p>
-			<a id="view-connectors" href="#">Click here to view a list of websites supported by the extension.</a>
-		</p>
-		<ul id="connectors" hidden></ul>
-
-		<h2>License</h2>
-		<p>
-			The extension is licensed under the <a href="https://github.com/web-scrobbler/web-scrobbler/blob/master/LICENSE.md">MIT License</a>.
-		</p>
-
-		<h2>Show some love</h2>
-
-		<p>
-			Unlike other extensions, this one does not contain any flashing banners or sneaky ads.
-		</p>
-
-		<p>
-			The extension is free, and will always be free. But if you want to support development of the extension, you can use the button below.
-		</p>
-
-		<div class="support center">
-			<a href="https://ko-fi.com/R6R21HYBD" target="_blank">
-				<img src="https://www.ko-fi.com/img/githubbutton_sm.svg" alt="Support me on Ko-fi"/>
-			</a>
+							<div class="feature__item">
+								<h3 class="feature__title">
+									Open Source &amp; Ad-free
+								</h3>
+								<p class="feature__description">
+									The extension is free for everyone and does
+									not contain ads or banners.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="section__image right">
+						<svg
+							class="section__icon features"
+							focusable="false"
+							role="img"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<use xlink:href="#features"></use>
+						</svg>
+					</div>
+				</div>
+			</div>
 		</div>
-	</div>
 
-	<div class="footer center">
-		<div class="contacts">
-			<a href="https://discord.gg/u99wNWw">
-				<svg role="img" viewBox="0 0 24 24" focusable="false" fill="#7289dA" xmlns="http://www.w3.org/2000/svg"><path d="M20.222 0c1.406 0 2.54 1.137 2.607 2.475V24l-2.677-2.273-1.47-1.338-1.604-1.398.67 2.205H3.71c-1.402 0-2.54-1.065-2.54-2.476V2.48C1.17 1.142 2.31.003 3.715.003h16.5L20.222 0zm-6.118 5.683h-.03l-.202.2c2.073.6 3.076 1.537 3.076 1.537-1.336-.668-2.54-1.002-3.744-1.137-.87-.135-1.74-.064-2.475 0h-.2c-.47 0-1.47.2-2.81.735-.467.203-.735.336-.735.336s1.002-1.002 3.21-1.537l-.135-.135s-1.672-.064-3.477 1.27c0 0-1.805 3.144-1.805 7.02 0 0 1 1.74 3.743 1.806 0 0 .4-.533.805-1.002-1.54-.468-2.14-1.404-2.14-1.404s.134.066.335.2h.06c.03 0 .044.015.06.03v.006c.016.016.03.03.06.03.33.136.66.27.93.4.466.202 1.065.403 1.8.536.93.135 1.996.2 3.21 0 .6-.135 1.2-.267 1.8-.535.39-.2.87-.4 1.397-.737 0 0-.6.936-2.205 1.404.33.466.795 1 .795 1 2.744-.06 3.81-1.8 3.87-1.726 0-3.87-1.815-7.02-1.815-7.02-1.635-1.214-3.165-1.26-3.435-1.26l.056-.02zm.168 4.413c.703 0 1.27.6 1.27 1.335 0 .74-.57 1.34-1.27 1.34-.7 0-1.27-.6-1.27-1.334.002-.74.573-1.338 1.27-1.338zm-4.543 0c.7 0 1.266.6 1.266 1.335 0 .74-.57 1.34-1.27 1.34-.7 0-1.27-.6-1.27-1.334 0-.74.57-1.338 1.27-1.338z"/></svg>
-			</a>
-			<a href="mailto:web.scrobbler@gmail.com">
-				<svg role="img" viewBox="0 0 16 16" focusable="false" fill="#0071c5" xmlns="http://www.w3.org/2000/svg"><path d="M 16,7.0562664 C 16,2.8957055 12.766355,0 8.1179008,0 3.3012221,0 0,3.250482 0,7.9957932 0,12.893953 3.2135155,16 8.2846873,16 9.5240834,16 10.713156,15.82752 11.597412,15.530237 l 0,-1.208765 c -0.61826,0.279054 -1.9468009,0.459948 -3.2925953,0.459948 -4.2070453,0 -6.9202013,-2.636284 -6.9202013,-6.7281334 0,-3.9880806 2.7620417,-6.8445224 6.6053199,-6.8445224 3.9324227,0 6.6254497,2.3670465 6.6254497,5.8278703 0,2.3586328 -0.79655,3.8829095 -2.035946,3.8829095 -0.707404,0 -1.109993,-0.392638 -1.109993,-1.0657316 l 0,-5.6245398 -1.4838241,0 0,1.1695004 -0.1581596,0 C 9.4450036,4.5644172 8.5607477,4.0469763 7.526959,4.0469763 c -2.0129403,0 -3.4191229,1.6294479 -3.4191229,3.9586328 0,2.4357579 1.3759885,4.0750219 3.4205607,4.0750219 1.1502517,0 2.0345076,-0.546889 2.4572251,-1.524277 l 0.1581591,0 c 0.116463,0.939527 1.010784,1.609816 2.161036,1.609816 C 14.565061,12.16617 16,10.181946 16,7.0576687 Z M 5.6808052,8.0434706 c 0,-1.6785276 0.7764198,-2.6741454 2.0934579,-2.6741454 1.3371675,0 2.1912294,1.0348816 2.1912294,2.6741454 0,1.6392638 -0.8641266,2.6839614 -2.2113588,2.6839614 -1.286844,0 -2.0733285,-1.016652 -2.0733285,-2.6839614 z" /></svg>
-			</a>
-			<a href="https://github.com/web-scrobbler/web-scrobbler">
-				<svg role="img" viewBox="0 0 24 24" focusable="false" fill="#000000" xmlns="http://www.w3.org/2000/svg"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
-			</a>
-			<a href="https://twitter.com/web_scrobbler">
-				<svg role="img" viewBox="0 0 24 24" focusable="false" fill="#1da1f2" xmlns="http://www.w3.org/2000/svg"><path d="M23.954 4.569c-.885.389-1.83.654-2.825.775 1.014-.611 1.794-1.574 2.163-2.723-.951.555-2.005.959-3.127 1.184-.896-.959-2.173-1.559-3.591-1.559-2.717 0-4.92 2.203-4.92 4.917 0 .39.045.765.127 1.124C7.691 8.094 4.066 6.13 1.64 3.161c-.427.722-.666 1.561-.666 2.475 0 1.71.87 3.213 2.188 4.096-.807-.026-1.566-.248-2.228-.616v.061c0 2.385 1.693 4.374 3.946 4.827-.413.111-.849.171-1.296.171-.314 0-.615-.03-.916-.086.631 1.953 2.445 3.377 4.604 3.417-1.68 1.319-3.809 2.105-6.102 2.105-.39 0-.779-.023-1.17-.067 2.189 1.394 4.768 2.209 7.557 2.209 9.054 0 13.999-7.496 13.999-13.986 0-.209 0-.42-.015-.63.961-.689 1.8-1.56 2.46-2.548l-.047-.02z"/></svg>
-			</a>
+		<div class="content bg-alt">
+			<div class="container">
+				<h1 class="content__header center">Websites</h1>
+				<div class="section">
+					<div class="section__image">
+						<svg
+							class="section__icon globe"
+							focusable="false"
+							role="img"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<use xlink:href="#globe"></use>
+						</svg>
+					</div>
+					<div class="section__description">
+						<ul class="websites" id="websites-first"></ul>
+						<ul class="websites" id="websites-more" hidden></ul>
+						<div class="center">
+							<button
+								class="websites__button"
+								id="show-all"
+								title="Show all websites"
+								type="button"
+							>
+								•••
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
-		<span class="copyright">© 2020 <a href="https://github.com/web-scrobbler/web-scrobbler/graphs/contributors">Web Scrobbler Team</a></span>
-	</div>
-</body>
 
+		<div class="content bg">
+			<div class="container">
+				<h1 class="content__header center">Contributions</h1>
+				<div class="section">
+					<div class="section__description">
+						<p>
+							Web Scrobbler is an open source project being
+							developed by a great number of contributors. We
+							always welcome any kind of contributions. Here are
+							what you can do to improve Web Scrobbler:
+						</p>
+						<ul>
+							<li>
+								report an
+								<a
+									href="https://github.com/web-scrobbler/web-scrobbler/issues"
+									target="_blank"
+								>
+									issue
+								</a>
+							</li>
+							<li>
+								submit a
+								<a
+									href="https://github.com/web-scrobbler/web-scrobbler/pulls"
+									target="_blank"
+								>
+									pull request
+								</a>
+							</li>
+							<li>
+								create a new
+								<a
+									href="https://github.com/web-scrobbler/web-scrobbler/wiki/Translate-the-extension"
+									target="_blank"
+								>
+									translation
+								</a>
+							</li>
+						</ul>
+						<p>
+							If you want to support development of the extension,
+							consider
+							<a
+								href="https://ko-fi.com/R6R21HYBD"
+								target="_blank"
+							>
+								buying a coffee
+							</a>
+							for Web Scrobbler via Ko-fi. Your support is greatly
+							appreciated!
+						</p>
+					</div>
+					<div class="section__image right">
+						<svg
+							class="section__icon heart"
+							focusable="false"
+							role="img"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<use xlink:href="#heart"></use>
+						</svg>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="footer">
+			<div class="footer__contacts center">
+				<a
+					href="https://discord.gg/u99wNWw"
+					target="_blank"
+					title="Discord"
+				>
+					<svg
+						class="footer__contact-icon footer__contact-link"
+						focusable="false"
+						role="img"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<use xlink:href="#discord"></use>
+					</svg>
+				</a>
+				<a
+					href="mailto:web.scrobbler@gmail.com"
+					target="_blank"
+					title="E-mail"
+				>
+					<svg
+						class="footer__contact-icon footer__contact-link"
+						focusable="false"
+						role="img"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<use xlink:href="#at"></use>
+					</svg>
+				</a>
+				<a
+					href="https://github.com/web-scrobbler/web-scrobbler"
+					target="_blank"
+					title="GitHub"
+				>
+					<svg
+						class="footer__contact-icon footer__contact-link"
+						focusable="false"
+						role="img"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<use xlink:href="#github"></use>
+					</svg>
+				</a>
+				<a
+					href="https://twitter.com/web_scrobbler"
+					target="_blank"
+					title="Twitter"
+				>
+					<svg
+						class="footer__contact-icon footer__contact-link"
+						focusable="false"
+						role="img"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<use xlink:href="#twitter"></use>
+					</svg>
+				</a>
+			</div>
+			<div class="footer__copyright footer__color center">
+				© 2020
+				<a
+					class="footer__contact-link"
+					href="https://github.com/web-scrobbler/web-scrobbler/graphs/contributors"
+					target="_blank"
+				>
+					Web Scrobbler Team
+				</a>
+			</div>
+		</div>
+	</body>
 </html>

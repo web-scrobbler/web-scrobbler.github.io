@@ -1,4 +1,6 @@
-@import url(https://fonts.googleapis.com/css?family=Merriweather+Sans);
+@import url('https://fonts.googleapis.com/css?family=Merriweather+Sans');
+
+/* Custom tag styling  */
 
 a {
 	color: #d51007;
@@ -9,125 +11,277 @@ a:hover {
 }
 
 body {
-	background-color: #fff;
-	color: #212529;
-	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+	display: flex;
+	flex-direction: column;
 	font-size: 1rem;
 	font-weight: normal;
 	line-height: 1.5;
-	margin: auto;
-	max-width: 500px;
-	padding: 32px;
+	margin: 0;
 }
 
-h1, h2, h3, h4, h5, h6 {
-	border-bottom: 1px solid #eaecef;
-	font-weight: 600;
-	padding-bottom: 0.3rem;
+body,
+button,
+input {
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+		'Helvetica Neue', Arial, sans-serif;
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: 600;
+	margin-top: 0;
+}
+
+p {
+	margin-top: 0;
+}
+
+/* Alignment */
 
 .center {
 	text-align: center;
 }
 
-.logo {
-	height: 128px;
-	width: 128px;
+.right {
+	text-align: right;
 }
 
-.name {
+/* Base container  */
+
+.container {
+	margin: auto;
+	max-width: 768px;
+	padding: 2rem;
+}
+
+.bg {
+	background-color: #fff;
+	color: #212529;
+}
+
+.bg-alt {
+	background-color: #f2f0ed;
+	color: #342827;
+}
+
+/* Icon styles */
+
+.features {
+	color: #2f4858;
+}
+
+.globe {
+	color: #334c78;
+}
+
+.heart {
+	color: #d51007;
+}
+
+/* Header */
+
+.header {
+	background-color: none;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.75)),
+		url(https://source.unsplash.com/6-KP9A2t5Vg/1920x1280);
+	background-position-y: 75%;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.header__logo {
+	height: 8rem;
+	width: 8rem;
+}
+
+.header__name {
 	font-family: 'Merriweather Sans', sans-serif;
 	font-size: 2em;
 	font-weight: bold;
-	margin-top: 8px;
 }
 
-.tagline {
+.header__tagline {
 	font-family: 'Merriweather Sans', sans-serif;
 	font-size: 1.2em;
 }
 
-.badge-container {
-	margin-top: 16px;
+.header__download-icon {
+	color: #fff;
+	height: 4rem;
+	margin-left: 1rem;
+	margin-right: 1rem;
+	width: 4rem;
 }
 
-.badge-container a {
-	padding: 2px;
-	text-decoration: none;
+.header__download-icon:hover {
+	color: #ddd;
 }
 
-.support {
-	margin-top: 32px;
+.header--text {
+	color: #fff;
 }
+
+.header--row {
+	margin-top: 2rem;
+}
+
+/* Content */
+
+.content__header {
+	font-family: 'Merriweather Sans', sans-serif;
+	margin-bottom: 2rem;
+}
+
+.section {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.section__icon {
+	height: 12rem;
+	width: 12rem;
+}
+
+.section__image {
+	display: none;
+	width: 0%;
+}
+
+.section__description {
+	width: 100%;
+}
+
+/* Features section */
+
+.feature {
+	display: flex;
+	flex-wrap: wrap;
+	margin: -0.5rem -1rem;
+}
+
+.feature__item {
+	margin: 0.5rem 1rem;
+	width: 100%;
+}
+
+.feature__title {
+	margin-bottom: 0;
+}
+
+.feature__description {
+	margin-top: 0.5rem;
+}
+
+.feature__counter {
+	font-weight: 600;
+}
+
+/* Websites section */
+
+.websites {
+	display: flex;
+	flex-wrap: wrap;
+	margin: auto;
+	padding: 0;
+	width: 80%;
+}
+
+.websites__item {
+	margin: 0;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	width: 100%;
+}
+
+.websites__button {
+	font-size: 1rem;
+	margin-top: 1rem;
+}
+
+/* Footer */
 
 .footer {
-	margin-top: 32px;
+	background-color: #343a40;
+	border-top: 1px solid #2c2c2c;
+	flex-shrink: 0;
+	padding: 1.5rem;
 }
 
-.copyright, .copyright a {
-	color: #666;
+.footer__contacts {
+	margin-bottom: 0.5rem;
 }
 
-.copyright a:hover {
-	color: #333;
+.footer__color,
+.footer__contact-link {
+	color: #a3a6a9;
 }
 
-.counter {
-	font-weight: bold;
+.footer__contact-link:hover {
+	color: #cccecf;
 }
 
-.contacts {
-	margin-bottom: 8px;
-}
-
-.contacts a {
-	margin-left: 4px;
-	margin-right: 4px;
-	text-decoration: none;
-}
-
-.contacts svg {
+.footer__contact-icon {
 	height: 2rem;
+	margin-left: 0.5rem;
+	margin-right: 0.5rem;
 	width: 2rem;
 }
 
-/*
- * tholman/github-corners
- */
+@media (min-width: 768px) {
+	.container {
+		padding: 6rem;
+	}
 
-.github-corner:hover .octo-arm {
-	animation: octocat-wave 560ms ease-in-out;
+	.header__logo {
+		height: 12rem;
+		width: 12rem;
+	}
+
+	.header--row {
+		margin-top: 2rem;
+	}
+
+	.feature__item {
+		width: calc(50% - 2rem);
+	}
+
+	.content__header {
+		font-size: 3rem;
+		margin-bottom: 4rem;
+	}
+
+	.websites {
+		list-style: none;
+		margin: 0 -1rem;
+		width: 100%;
+	}
+
+	.websites__item {
+		margin: 0 1rem;
+		width: calc(33% - 2rem);
+	}
 }
 
-.github-corner svg {
-	border: 0;
-	color: #fff;
-	fill: #151513;
-	position: absolute;
-	right: 0;
-	top: 0;
-}
+@media (min-width: 992px) {
+	.container {
+		max-width: 992px;
+	}
 
-@keyframes octocat-wave {
-	0%,
-	100% {
-		transform: rotate(0);
+	.section__image {
+		display: initial;
+		width: 30%;
 	}
-	20%,
-	60% {
-		transform: rotate(-25deg);
-	}
-	40%,
-	80% {
-		transform: rotate(10deg);
+
+	.section__description {
+		width: 70%;
 	}
 }
 
-@media (max-width:500px) {
-	.github-corner:hover .octo-arm {
-		animation: none;
-	}
-	.github-corner .octo-arm {
-		animation: octocat-wave 560ms ease-in-out;
-	}
+[hidden] {
+	display: none;
 }

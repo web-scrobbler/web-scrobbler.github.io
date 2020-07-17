@@ -1,40 +1,51 @@
 'use strict';
 
-const CONNECTORS_URL = 'https://raw.githubusercontent.com/web-scrobbler/website-resources/master/resources/connectors.json';
+const CONNECTORS_URL =
+	'https://raw.githubusercontent.com/web-scrobbler/website-resources/master/resources/connectors.json';
 
-const viewLinkId = 'view-connectors';
-const connectorsListId = 'connectors';
-const connectorCountId = 'connectors-count';
+const websitesFirstId = 'websites-first';
+const websitesMoreId = 'websites-more';
+const btnShowAllId = 'show-all';
+
+const websitesCountId = 'websites-count';
 
 function onDomContentLoaded() {
 	initControls();
-	updateConnectors();
+	updateWebsites();
 }
 
 function initControls() {
-	const aElement = document.getElementById(viewLinkId);
-	aElement.addEventListener('click', (e) => {
+	const btnShowAll = document.getElementById(btnShowAllId);
+	btnShowAll.addEventListener('click', (e) => {
 		e.preventDefault();
 
-		const ulElement = document.getElementById(connectorsListId);
-		ulElement.hidden = false;
-		aElement.hidden = true;
+		document.getElementById(websitesMoreId).hidden = false;
+		btnShowAll.hidden = true;
 	});
 }
 
-async function updateConnectors() {
+async function updateWebsites() {
 	const connectors = (await getConnectors()).sort(compareIgnoreCase);
-	const ulElement = document.getElementById(connectorsListId);
 
-	const connectorsCount = document.getElementById(connectorCountId);
-	connectorsCount.innerHTML = connectors.length;
+	const websitesCount = document.getElementById(websitesCountId);
+	websitesCount.innerHTML = connectors.length;
 
-	for (const connector of connectors) {
-		const liElement = document.createElement('li');
-		const textNode = document.createTextNode(connector);
 
-		liElement.appendChild(textNode);
-		ulElement.appendChild(liElement);
+	const initialWebsitesCount = getInitialWebsitesCount();
+	appendConnectors(websitesFirstId, connectors.slice(0, initialWebsitesCount));
+	appendConnectors(websitesMoreId, connectors.slice(initialWebsitesCount));
+}
+
+function appendConnectors(containerId, websites) {
+	const container = document.getElementById(containerId);
+
+	for (const websiteName of websites) {
+		const websiteLabel = document.createTextNode(websiteName);
+		const websiteElement = document.createElement('li');
+		websiteElement.className = 'websites__item';
+		websiteElement.appendChild(websiteLabel);
+
+		container.appendChild(websiteElement);
 	}
 }
 
@@ -43,6 +54,10 @@ async function getConnectors() {
 	const connectors = await response.json();
 
 	return connectors;
+}
+
+function getInitialWebsitesCount() {
+	return document.body.clientWidth >= 768 ? 36 : 18;
 }
 
 function compareIgnoreCase(a, b) {

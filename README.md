@@ -2,6 +2,14 @@
 
 This is a simple website for [Web Scrobbler][web-scrobbler-github] extension.
 
+## Development
+
+Run a server with live reload on changes:
+
+```sh
+> npm start
+```
+
 ## Credits
 
 Social icons are by [Simple Icons][simple-icons]. `at` icon is by [Boostrap Icons][bs-icons].

@@ -4,13 +4,10 @@ const CONNECTORS_URL =
 	'https://raw.githubusercontent.com/web-scrobbler/website-resources/master/resources/connectors.json';
 
 const websitesContainerId = 'websites';
+const websitesCountId = 'websites-count';
 const btnShowAllId = 'show-all';
 
-const websitesCountId = 'websites-count';
-
-function onDomContentLoaded() {
-	initControls();
-}
+initControls();
 
 async function initControls() {
 	const connectors = (await getConnectors()).sort(compareIgnoreCase);
@@ -48,5 +45,3 @@ async function getConnectors() {
 function compareIgnoreCase(a, b) {
 	return a.toLowerCase().localeCompare(b.toLowerCase());
 }
-
-document.addEventListener('DOMContentLoaded', onDomContentLoaded);

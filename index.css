@@ -295,6 +295,18 @@ ul {
 		--logo-size: 12rem;
 	}
 
+	.header__name {
+		font-size: 3rem;
+	}
+
+	.header__tagline {
+		font-size: 1.5rem;
+	}
+
+	.header__description {
+		font-size: 1.2rem;
+	}
+
 	.content__header {
 		font-size: 3rem;
 		margin-bottom: 4rem;

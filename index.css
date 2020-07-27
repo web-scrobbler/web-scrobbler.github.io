@@ -31,6 +31,7 @@ body {
 	font-weight: normal;
 	line-height: var(--line-height-factor);
 	margin: 0;
+	padding: 0;
 }
 
 body,
@@ -51,7 +52,13 @@ h6 {
 }
 
 p {
-	margin-top: 0;
+	margin: 0;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
 }
 
 /* Alignment */
@@ -200,7 +207,6 @@ p {
 	display: flex;
 	flex-wrap: wrap;
 	height: var(--initial-websites-height);
-	list-style: none;
 	margin: 0 -1rem;
 	overflow-y: hidden;
 	padding: 0;
@@ -228,6 +234,15 @@ p {
 	color: #342827;
 	height: 3rem;
 	width: 3rem;
+}
+
+/* Contributing */
+
+.contributions {
+	list-style-type: disc;
+	margin-bottom: 2rem;
+	margin-top: 1rem;
+	padding-left: 3rem;
 }
 
 /* Footer */

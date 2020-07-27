@@ -68,7 +68,7 @@ p {
 
 .container {
 	margin: auto;
-	max-width: 768px;
+	max-width: 992px;
 	padding: 2rem;
 }
 
@@ -284,10 +284,6 @@ p {
 		width: 12rem;
 	}
 
-	.header--row {
-		margin-top: 2rem;
-	}
-
 	.content__header {
 		font-size: 3rem;
 		margin-bottom: 4rem;
@@ -295,10 +291,6 @@ p {
 }
 
 @media (min-width: 992px) {
-	.container {
-		max-width: 992px;
-	}
-
 	.section__image {
 		display: initial;
 		width: 30%;

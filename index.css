@@ -184,11 +184,11 @@ ul {
 .feature {
 	display: flex;
 	flex-wrap: wrap;
-	margin: -0.5rem -1rem;
+	margin: -1rem;
 }
 
 .feature__item {
-	margin: 0.5rem 1rem;
+	margin: 1rem;
 	width: calc(100% / var(--features-columns) - 2rem);
 }
 

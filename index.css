@@ -1,5 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Merriweather+Sans');
 
+:root {
+	--font-size: 1rem;
+	--line-height-factor: 1.5;
+	--row-height: calc(
+		var(--font-size) * var(--line-height-factor)
+	);
+
+	--websites-rows: 24;
+	--initial-websites-height: calc(var(--row-height) * var(--websites-rows));
+}
+
 /* Custom tag styling  */
 
 a {
@@ -13,9 +24,9 @@ a:hover {
 body {
 	display: flex;
 	flex-direction: column;
-	font-size: 1rem;
+	font-size: var(--font-size);
 	font-weight: normal;
-	line-height: 1.5;
+	line-height: var(--line-height-factor);
 	margin: 0;
 }
 
@@ -185,9 +196,15 @@ p {
 .websites {
 	display: flex;
 	flex-wrap: wrap;
+	height: var(--initial-websites-height);
 	margin: auto;
+	overflow-y: hidden;
 	padding: 0;
 	width: 80%;
+}
+
+.websites--more {
+	height: auto;
 }
 
 .websites__item {
@@ -239,6 +256,10 @@ p {
 }
 
 @media (min-width: 768px) {
+	:root {
+		--websites-rows: 12;
+	}
+
 	.container {
 		padding: 6rem;
 	}

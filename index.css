@@ -198,9 +198,15 @@ p {
 	width: 100%;
 }
 
-.websites__button {
-	font-size: 1rem;
+.websites__button-expand {
+	display: block;
 	margin-top: 1rem;
+}
+
+.websites__button-expand-icon {
+	color: #342827;
+	height: 3rem;
+	width: 3rem;
 }
 
 /* Footer */

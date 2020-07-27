@@ -212,7 +212,7 @@ ul {
 	height: var(--initial-websites-height);
 	margin: 0 -1rem;
 	overflow-y: hidden;
-	width: 100%;
+	padding: 0 2rem;
 }
 
 .websites--more {
@@ -298,6 +298,10 @@ ul {
 	.content__header {
 		font-size: 3rem;
 		margin-bottom: 4rem;
+	}
+
+	.websites {
+		padding: 0;
 	}
 }
 

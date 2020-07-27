@@ -10,6 +10,9 @@
 		var(--row-height) * var(--initial-websites-rows)
 	);
 
+	--content-padding: 2rem;
+	--logo-size: 8rem;
+
 	--features-columns: 1;
 	--websites-columns: 1;
 }
@@ -76,7 +79,7 @@ ul {
 .container {
 	margin: auto;
 	max-width: 992px;
-	padding: 2rem;
+	padding: var(--content-padding);
 }
 
 .bg {
@@ -115,8 +118,8 @@ ul {
 }
 
 .header__logo {
-	height: 8rem;
-	width: 8rem;
+	height: var(--logo-size);
+	width: var(--logo-size);
 }
 
 .header__name {
@@ -287,15 +290,9 @@ ul {
 
 		--features-columns: 2;
 		--websites-columns: 3;
-	}
 
-	.container {
-		padding: 6rem;
-	}
-
-	.header__logo {
-		height: 12rem;
-		width: 12rem;
+		--content-padding: 6rem;
+		--logo-size: 12rem;
 	}
 
 	.content__header {

@@ -209,7 +209,6 @@ ul {
 	height: var(--initial-websites-height);
 	margin: 0 -1rem;
 	overflow-y: hidden;
-	padding: 0;
 	width: 100%;
 }
 

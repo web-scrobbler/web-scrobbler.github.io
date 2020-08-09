@@ -27,6 +27,9 @@
     "extends": "web-scrobbler",
     "env": {
       "browser": true
+    },
+    "parserOptions": {
+      "sourceType": "script"
     }
   },
   "prettier": "prettier-config-web-scrobbler",

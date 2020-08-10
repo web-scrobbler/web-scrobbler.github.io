@@ -29,8 +29,6 @@ a:hover {
 }
 
 body {
-	display: flex;
-	flex-direction: column;
 	font-size: var(--font-size);
 	font-weight: normal;
 	line-height: var(--line-height-factor);

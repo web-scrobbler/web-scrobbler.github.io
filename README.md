@@ -4,9 +4,11 @@ This is a simple website for [Web Scrobbler][web-scrobbler-github] extension.
 
 ## Development
 
-Run a server with live reload on changes:
-
 ```sh
+# Install dependencies
+> npm install
+
+# Run a server with live reload on changes
 > npm start
 ```
 

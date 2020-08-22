@@ -12,7 +12,7 @@
   "devDependencies": {
     "eslint": "7.7.0",
     "eslint-config-web-scrobbler": "1.1.0",
-    "html-validate": "3.0.0",
+    "html-validate": "3.1.0",
     "prettier-config-web-scrobbler": "0.1.0",
     "stylelint": "13.6.1",
     "stylelint-config-web-scrobbler": "0.2.0"

@@ -21,11 +21,11 @@
 /* Custom tag styling  */
 
 a {
-	color: #d51007;
+	color: #b8422c;
 	text-decoration: none;
 }
 a:hover {
-	color: #ba0d07;
+	color: #9e3725;
 }
 
 body {
@@ -88,21 +88,21 @@ ul {
 
 .bg-alt {
 	background-color: #f2f0ed;
-	color: #342827;
+	color: #2e1904;
 }
 
 /* Icon styles */
 
 .features {
-	color: #2f4858;
+	color: #519267;
 }
 
 .globe {
-	color: #334c78;
+	color: #247ba0;
 }
 
 .heart {
-	color: #d51007;
+	color: #b8422c;
 }
 
 /* Header */

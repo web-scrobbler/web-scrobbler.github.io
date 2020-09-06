@@ -14,6 +14,8 @@
 	--content-padding: 2rem;
 	--logo-size: 8rem;
 
+	--step-number-size: 2rem;
+
 	--video-width: 100%;
 
 	--features-columns: 1;
@@ -216,9 +218,9 @@ ul {
 }
 
 .step__title {
-	line-height: 3rem;
+	line-height: var(--step-number-size);
 	margin-bottom: 0;
-	padding-left: 4rem;
+	padding-left: calc(var(--step-number-size) * 1.4);
 	position: relative;
 }
 
@@ -229,13 +231,13 @@ ul {
 	content: counter(step-number);
 	counter-increment: step-number;
 	display: block;
-	font-size: 1.5rem;
+	font-size: calc(var(--step-number-size) / 2);
 	font-weight: 600;
-	height: 3rem;
+	height: var(--step-number-size);
 	left: 0;
 	position: absolute;
 	text-align: center;
-	width: 3rem;
+	width: var(--step-number-size);
 }
 
 .step__description {
@@ -359,6 +361,8 @@ ul {
 		--websites-columns: 3;
 
 		--video-width: 75%;
+
+		--step-number-size: 3rem;
 
 		--content-padding: 6rem;
 		--logo-size: 12rem;

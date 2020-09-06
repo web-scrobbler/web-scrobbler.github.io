@@ -202,6 +202,7 @@ ul {
 }
 
 .step__title {
+	font-size: 1.2rem;
 	line-height: var(--step-number-size);
 	margin-bottom: 0;
 	padding-left: calc(var(--step-number-size) * 1.4);
@@ -242,6 +243,7 @@ ul {
 }
 
 .feature__title {
+	font-size: 1.2rem;
 	margin-bottom: 0;
 }
 

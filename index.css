@@ -16,6 +16,7 @@
 
 	--features-columns: 1;
 	--websites-columns: 1;
+	--steps-columns: 1;
 }
 
 /* Custom tag styling  */
@@ -144,6 +145,11 @@ ul {
 	margin-bottom: 2rem;
 }
 
+.main-description {
+	margin: auto;
+	margin-bottom: 2rem;
+}
+
 .section {
 	display: flex;
 	flex-wrap: wrap;
@@ -173,6 +179,47 @@ ul {
 
 .section__icon--contributing {
 	color: #b8422c;
+}
+
+/* Steps */
+
+.steps {
+	counter-reset: step-number;
+	display: flex;
+	flex-wrap: wrap;
+	margin: -1rem;
+}
+
+.step {
+	margin: 1rem;
+	width: calc(100% / var(--steps-columns) - 2rem);
+}
+
+.step__title {
+	line-height: 3rem;
+	margin-bottom: 0;
+	padding-left: 4rem;
+	position: relative;
+}
+
+.step__title::before {
+	background-color: #b8422c;
+	border-radius: 50%;
+	color: #ffffff;
+	content: counter(step-number);
+	counter-increment: step-number;
+	display: block;
+	font-size: 1.5rem;
+	font-weight: 600;
+	height: 3rem;
+	left: 0;
+	position: absolute;
+	text-align: center;
+	width: 3rem;
+}
+
+.step__description {
+	margin-top: 1.5rem;
 }
 
 /* Features section */
@@ -303,6 +350,13 @@ ul {
 		font-size: 1.2rem;
 	}
 
+	.main-description {
+		font-size: 1.2rem;
+		margin-bottom: 4rem;
+		text-align: center;
+		width: 75%;
+	}
+
 	.content-header {
 		font-size: 3rem;
 		margin-bottom: 4rem;
@@ -321,6 +375,12 @@ ul {
 
 	.section__description {
 		width: 70%;
+	}
+}
+
+@media (min-width: 1200px) {
+	:root {
+		--steps-columns: 3;
 	}
 }
 

@@ -14,6 +14,8 @@
 	--content-padding: 2rem;
 	--logo-size: 8rem;
 
+	--video-width: 100%;
+
 	--features-columns: 1;
 	--websites-columns: 1;
 	--steps-columns: 1;
@@ -149,6 +151,23 @@ ul {
 .main-description {
 	margin: auto;
 	margin-bottom: 2rem;
+}
+
+.video-container {
+	height: 0;
+	margin: auto;
+	margin-top: var(--content-padding);
+	padding-bottom: calc(var(--video-width) * 9 / 16);
+	position: relative;
+	width: var(--video-width);
+}
+
+.video-container--video-frame {
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
 }
 
 .section {
@@ -338,6 +357,8 @@ ul {
 
 		--features-columns: 2;
 		--websites-columns: 3;
+
+		--video-width: 75%;
 
 		--content-padding: 6rem;
 		--logo-size: 12rem;

@@ -128,7 +128,8 @@ ul {
 }
 
 .header__download-icon:hover {
-	color: #ddd;
+	/* color: #ddd; */
+	transform: scale(1.2);
 }
 
 .header--text {

@@ -2,6 +2,9 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
 :root {
+	--font-header: 'Merriweather Sans', sans-serif;
+	--font-text: 'Open Sans', sans-serif;
+
 	--font-size: 1rem;
 	--line-height-factor: 1.5;
 	--row-height: calc(var(--font-size) * var(--line-height-factor));
@@ -42,7 +45,7 @@ body {
 body,
 button,
 input {
-	font-family: 'Open Sans', sans-serif;
+	font-family: var(--font-text);
 }
 
 h1,
@@ -51,7 +54,7 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: 'Merriweather Sans', sans-serif;
+	font-family: var(--font-header);
 	font-weight: 700;
 	margin-top: 0;
 }
@@ -111,13 +114,13 @@ ul {
 }
 
 .header__name {
-	font-family: 'Merriweather Sans', sans-serif;
+	font-family: var(--font-header);
 	font-size: 2em;
 	font-weight: bold;
 }
 
 .header__tagline {
-	font-family: 'Merriweather Sans', sans-serif;
+	font-family: var(--font-header);
 	font-size: 1.2em;
 }
 

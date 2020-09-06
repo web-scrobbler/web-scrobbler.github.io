@@ -282,6 +282,10 @@ ul {
 	width: 3rem;
 }
 
+.websites__button-expand-icon:hover {
+	transform: scale(1.2);
+}
+
 /* Contributing */
 
 .contributions {

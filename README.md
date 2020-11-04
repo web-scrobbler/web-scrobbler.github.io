@@ -1,4 +1,4 @@
-# Web Scrobbler
+# website
 
 This is a simple website for [Web Scrobbler][web-scrobbler-github] extension.
 

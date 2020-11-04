@@ -100,12 +100,8 @@ ul {
 /* Header */
 
 .header {
-	background-color: none;
-	background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
-		url(https://source.unsplash.com/6-KP9A2t5Vg/1920x1280);
-	background-position-y: 75%;
-	background-repeat: no-repeat;
-	background-size: cover;
+	background-color: #080808;
+	background-image: url(images/header-pattern.png);
 }
 
 .header__logo {

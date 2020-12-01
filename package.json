@@ -14,7 +14,7 @@
     "eslint-config-web-scrobbler": "1.1.0",
     "html-validate": "3.5.0",
     "prettier-config-web-scrobbler": "0.1.0",
-    "stylelint": "13.7.2",
+    "stylelint": "13.8.0",
     "stylelint-config-web-scrobbler": "0.2.0"
   },
   "engines": {

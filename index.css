@@ -86,9 +86,12 @@ ul {
 /* Base container  */
 
 .container {
+	padding: var(--content-padding);
+}
+
+.wrapper {
 	margin: auto;
 	max-width: 992px;
-	padding: var(--content-padding);
 }
 
 .bg-white {

@@ -539,78 +539,171 @@
 		</section>
 
 		<footer class="footer">
-			<div class="footer__contacts center">
-				<a
-					rel="noopener"
-					href="https://discord.gg/u99wNWw"
-					target="_blank"
-					title="Discord"
-				>
-					<svg
-						class="footer__contact-icon footer__contact-link"
-						focusable="false"
-						role="img"
-						xmlns="http://www.w3.org/2000/svg"
+			<div class="wrapper">
+				<div class="footer-sections">
+					<div class="footer-about">
+						<h3 class="footer-links__header">About</h3>
+						<p class="footer-about__description">
+							Web Scrobbler helps music listeners to scrobble
+							their online playback history.
+						</p>
+					</div>
+					<div class="footer-links">
+						<h3 class="footer-links__header">For users</h3>
+						<ul>
+							<li class="footer-links__list-item">
+								<a
+									class="footer__contact-link"
+									href="https://github.com/web-scrobbler/web-scrobbler/issues"
+								>
+									Issues
+								</a>
+							</li>
+							<li class="footer-links__list-item">
+								<a
+									class="footer__contact-link"
+									href="https://github.com/web-scrobbler/web-scrobbler/discussions"
+								>
+									Discussions
+								</a>
+							</li>
+							<li class="footer-links__list-item">
+								<a
+									class="footer__contact-link"
+									href="https://github.com/web-scrobbler/web-scrobbler/releases"
+								>
+									Release notes
+								</a>
+							</li>
+							<li class="footer-links__list-item">
+								<a
+									class="footer__contact-link"
+									href="https://github.com/web-scrobbler/web-scrobbler/blob/master/src/_locales/en/privacy.md"
+								>
+									Privacy policy
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer-links">
+						<h3 class="footer-links__header">For developers</h3>
+						<ul>
+							<li class="footer-links__list-item">
+								<a
+									class="footer__contact-link"
+									href="https://github.com/web-scrobbler/web-scrobbler/"
+								>
+									GitHub page
+								</a>
+							</li>
+
+							<li class="footer-links__list-item">
+								<a
+									class="footer__contact-link"
+									href="https://github.com/web-scrobbler/web-scrobbler/wiki"
+								>
+									Project wiki
+								</a>
+							</li>
+							<li class="footer-links__list-item">
+								<a
+									class="footer__contact-link"
+									href="https://github.com/web-scrobbler/web-scrobbler/blob/master/.github/CONTRIBUTING.md"
+								>
+									Contributing
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<ul class="footer-contacts center">
+					<li class="footer-contacts__item">
+						<a
+							class="footer__contact-link"
+							rel="noopener"
+							href="https://discord.gg/u99wNWw"
+							target="_blank"
+							title="Discord"
+						>
+							<svg
+								class="footer__contact-icon"
+								focusable="false"
+								role="img"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<use xlink:href="#discord"></use>
+							</svg>
+						</a>
+					</li>
+
+					<li class="footer-contacts__item">
+						<a
+							class="footer__contact-link"
+							rel="noopener"
+							href="mailto:web.scrobbler@gmail.com"
+							target="_blank"
+							title="E-mail"
+						>
+							<svg
+								class="footer__contact-icon"
+								focusable="false"
+								role="img"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<use xlink:href="#at"></use>
+							</svg>
+						</a>
+					</li>
+					<li class="footer-contacts__item">
+						<a
+							class="footer__contact-link"
+							rel="noopener"
+							href="https://github.com/web-scrobbler/web-scrobbler"
+							target="_blank"
+							title="GitHub"
+						>
+							<svg
+								class="footer__contact-icon"
+								focusable="false"
+								role="img"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<use xlink:href="#github"></use>
+							</svg>
+						</a>
+					</li>
+					<li class="footer-contacts__item">
+						<a
+							class="footer__contact-link"
+							rel="noopener"
+							href="https://twitter.com/web_scrobbler"
+							target="_blank"
+							title="Twitter"
+						>
+							<svg
+								class="footer__contact-icon"
+								focusable="false"
+								role="img"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<use xlink:href="#twitter"></use>
+							</svg>
+						</a>
+					</li>
+				</ul>
+
+				<div class="footer__copyright center">
+					© 2021
+					<a
+						rel="noopener"
+						class="footer__contact-link"
+						href="https://github.com/web-scrobbler/web-scrobbler/graphs/contributors"
+						target="_blank"
 					>
-						<use xlink:href="#discord"></use>
-					</svg>
-				</a>
-				<a
-					rel="noopener"
-					href="mailto:web.scrobbler@gmail.com"
-					target="_blank"
-					title="E-mail"
-				>
-					<svg
-						class="footer__contact-icon footer__contact-link"
-						focusable="false"
-						role="img"
-						xmlns="http://www.w3.org/2000/svg"
-					>
-						<use xlink:href="#at"></use>
-					</svg>
-				</a>
-				<a
-					rel="noopener"
-					href="https://github.com/web-scrobbler/web-scrobbler"
-					target="_blank"
-					title="GitHub"
-				>
-					<svg
-						class="footer__contact-icon footer__contact-link"
-						focusable="false"
-						role="img"
-						xmlns="http://www.w3.org/2000/svg"
-					>
-						<use xlink:href="#github"></use>
-					</svg>
-				</a>
-				<a
-					rel="noopener"
-					href="https://twitter.com/web_scrobbler"
-					target="_blank"
-					title="Twitter"
-				>
-					<svg
-						class="footer__contact-icon footer__contact-link"
-						focusable="false"
-						role="img"
-						xmlns="http://www.w3.org/2000/svg"
-					>
-						<use xlink:href="#twitter"></use>
-					</svg>
-				</a>
-			</div>
-			<div class="footer__copyright footer__color center">
-				© 2021
-				<a
-					rel="noopener"
-					class="footer__contact-link"
-					href="https://github.com/web-scrobbler/web-scrobbler/graphs/contributors"
-					target="_blank"
-				>
-					Web Scrobbler Team
-				</a>
+						Web Scrobbler Team
+					</a>
+				</div>
 			</div>
 		</footer>
 	</body>

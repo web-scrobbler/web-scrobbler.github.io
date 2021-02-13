@@ -111,7 +111,7 @@ ul {
 .header {
 	background-attachment: fixed;
 	background-color: #0a0809;
-	background-image: url(images/header-pattern.png);
+	background-image: url(images/pattern.png);
 }
 
 .header__logo {
@@ -311,7 +311,10 @@ ul {
 /* Footer */
 
 .footer {
+	background-attachment: scroll, fixed;
 	background-color: #0a0809;
+	background-image: linear-gradient(rgba(10, 8, 9, 0), rgba(10, 8, 9, 1)),
+		url('./images/pattern.png');
 	border-top: 1px solid #141313;
 	color: #a3a6a9;
 	padding: var(--footer-padding);

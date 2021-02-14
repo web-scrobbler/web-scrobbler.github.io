@@ -317,7 +317,7 @@ ul {
 		url('./images/pattern.png');
 	border-top: 1px solid #141313;
 	color: #a3a6a9;
-	padding: var(--footer-padding);
+	padding: var(--footer-padding) var(--content-padding);
 }
 
 .footer-sections {

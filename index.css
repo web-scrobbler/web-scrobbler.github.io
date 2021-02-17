@@ -135,6 +135,7 @@ ul {
 	height: 4rem;
 	margin-left: 1rem;
 	margin-right: 1rem;
+	transition: transform 0.3s;
 	width: 4rem;
 }
 
@@ -292,6 +293,7 @@ ul {
 .websites__button-expand-icon {
 	color: #342827;
 	height: 3rem;
+	transition: transform 0.3s;
 	width: 3rem;
 }
 
@@ -364,6 +366,7 @@ ul {
 
 .footer__contact-link {
 	color: #a3a6a9;
+	transition: color 0.3s;
 }
 
 .footer__contact-link:hover {

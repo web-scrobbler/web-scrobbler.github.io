@@ -11,6 +11,9 @@ This is a simple website for [Web Scrobbler][web-scrobbler-github] extension.
 # Lint project files
 > npm run lint
 
+# Format project files
+> npm run format
+
 # Run a server with live reload on changes
 > npm start
 ```

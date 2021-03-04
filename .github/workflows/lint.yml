@@ -5,15 +5,21 @@ jobs:
     name: Run linters
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
-    - name: Read .nvmrc
-      run: echo ::set-output name=nvmrc::$(cat .nvmrc)
-      id: nvm
-    - uses: actions/setup-node@v1
-      with:
-        node-version: '${{ steps.nvm.outputs.nvmrc }}'
-    - name: Install dependencies
-      run: npm install
-    - name: Run linters
-      run: |
-        npm run lint
+      - name: Checkout the repository
+        uses: actions/checkout@v2
+
+      - name: Get Node.js version from .nvmrc
+        id: get-node-version
+        run: echo ::set-output name=NODE_VERSION::$(cat .nvmrc)
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: '${{ steps.get-node-version.outputs.NODE_VERSION }}'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run linters
+        run: |
+          npm run lint

@@ -25,3 +25,7 @@ This is a simple website for [Web Scrobbler][web-scrobbler-github] extension.
 [bs-icons]: https://icons.getbootstrap.com/
 [simple-icons]: https://simpleicons.org/
 [web-scrobbler-github]: https://github.com/web-scrobbler/web-scrobbler
+
+## License
+
+Licensed under the [MIT License](LICENSE.md).

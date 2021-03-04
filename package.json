@@ -14,6 +14,7 @@
     "eslint-config-web-scrobbler": "1.1.0",
     "html-validate": "4.6.0",
     "live-server": "1.2.1",
+    "prettier": "^2.2.1",
     "prettier-config-web-scrobbler": "0.1.0",
     "stylelint": "13.11.0",
     "stylelint-config-web-scrobbler": "0.2.0"
@@ -22,7 +23,9 @@
     "node": ">=12.0.0"
   },
   "scripts": {
-    "lint": "eslint *.js && stylelint *.css && html-validate *.html"
+    "lint": "eslint *.js && stylelint *.css && html-validate *.html",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
   },
   "eslintConfig": {
     "extends": "web-scrobbler",

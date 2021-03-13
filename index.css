@@ -18,6 +18,8 @@
 	--footer-padding: var(--content-padding);
 	--logo-size: 8rem;
 
+	--download-icon-size: 3rem;
+
 	--step-number-size: 2rem;
 
 	--features-columns: 1;
@@ -132,11 +134,10 @@ ul {
 
 .header__download-icon {
 	color: #fff;
-	height: 4rem;
-	margin-left: 1rem;
-	margin-right: 1rem;
+	height: var(--download-icon-size);
+	margin: 1rem;
 	transition: transform 0.3s;
-	width: 4rem;
+	width: var(--download-icon-size);
 }
 
 .header__download-icon:hover {
@@ -398,6 +399,8 @@ ul {
 		--content-padding: 6rem;
 		--footer-padding: 4rem;
 		--logo-size: 12rem;
+
+		--download-icon-size: 4rem;
 	}
 
 	.header__name {

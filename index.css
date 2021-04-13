@@ -114,6 +114,7 @@ ul {
 	background-attachment: fixed;
 	background-color: #0a0809;
 	background-image: url(images/pattern.png);
+	color: #fff6fc;
 }
 
 .header__logo {
@@ -133,7 +134,7 @@ ul {
 }
 
 .header__download-icon {
-	color: #fff;
+	color: #fff6fc;
 	height: var(--download-icon-size);
 	margin: 1rem;
 	transition: transform 0.3s;
@@ -143,10 +144,6 @@ ul {
 .header__download-icon:hover {
 	/* color: #ddd; */
 	transform: scale(1.2);
-}
-
-.header--text {
-	color: #fff;
 }
 
 .header--row {
@@ -319,7 +316,7 @@ ul {
 	background-image: linear-gradient(rgba(10, 8, 9, 0), rgba(10, 8, 9, 1)),
 		url('./images/pattern.png');
 	border-top: 1px solid #141313;
-	color: #a3a6a9;
+	color: #fff6fc;
 	padding: var(--footer-padding) var(--content-padding);
 }
 
@@ -353,6 +350,15 @@ ul {
 	margin-bottom: 0.5rem;
 }
 
+.footer__link {
+	color: #fff6fc;
+	transition: color 0.3s;
+}
+
+.footer__link:hover {
+	color: #c8bfc5;
+}
+
 .footer-contacts {
 	margin-bottom: 1rem;
 }
@@ -365,18 +371,19 @@ ul {
 	margin-right: 1rem;
 }
 
-.footer__contact-link {
-	color: #a3a6a9;
-	transition: color 0.3s;
-}
-
+.footer__contact-link,
 .footer__contact-link:hover {
-	color: #cccecf;
+	color: #fff6fc;
 }
 
 .footer__contact-icon {
 	height: 2rem;
+	transition: transform 0.3s;
 	width: 2rem;
+}
+
+.footer__contact-icon:hover {
+	transform: scale(1.2);
 }
 
 @media (min-width: 576px) {

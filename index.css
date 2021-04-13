@@ -30,11 +30,11 @@
 /* Custom tag styling  */
 
 a {
-	color: #d51007;
+	color: #b8422c;
 	text-decoration: none;
 }
 a:hover {
-	color: #ba0d07;
+	color: #9a2716;
 }
 
 body {
@@ -189,7 +189,7 @@ ul {
 }
 
 .section__icon--contributing {
-	color: #d51007;
+	color: #b8422c;
 }
 
 /* Steps */

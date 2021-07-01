@@ -14,7 +14,7 @@
     "eslint-config-web-scrobbler": "1.1.0",
     "html-validate": "4.10.1",
     "live-server": "1.2.1",
-    "prettier": "^2.2.1",
+    "prettier": "^2.3.2",
     "prettier-config-web-scrobbler": "0.1.0",
     "stylelint": "13.13.0",
     "stylelint-config-web-scrobbler": "0.2.0"

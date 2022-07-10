@@ -10,7 +10,7 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "eslint": "7.32.0",
+    "eslint": "8.19.0",
     "eslint-config-web-scrobbler": "1.1.0",
     "html-validate": "7.1.2",
     "live-server": "^1.2.2",

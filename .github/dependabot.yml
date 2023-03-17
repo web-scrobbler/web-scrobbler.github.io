@@ -6,16 +6,16 @@ updates:
       interval: monthly
     open-pull-requests-limit: 10
     reviewers:
-      - "web-scrobbler/maintenance-team"
+      - 'web-scrobbler/maintenance-team'
     labels:
       - dependencies
     versioning-strategy: increase
-  - package-ecosystem: "github-actions"
-    directory: "/"
+  - package-ecosystem: 'github-actions'
+    directory: '/'
     schedule:
       interval: monthly
     open-pull-requests-limit: 10
     reviewers:
-      - "web-scrobbler/maintenance-team"
+      - 'web-scrobbler/maintenance-team'
     labels:
       - dependencies

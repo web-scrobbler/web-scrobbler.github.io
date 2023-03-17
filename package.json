@@ -13,7 +13,7 @@
     "eslint": "7.32.0",
     "eslint-config-web-scrobbler": "2.1.1",
     "html-validate": "7.13.2",
-    "live-server": "^1.2.2",
+    "live-server": "^1.1.0",
     "prettier": "^2.8.4",
     "prettier-config-web-scrobbler": "0.1.0",
     "stylelint": "14.9.1",

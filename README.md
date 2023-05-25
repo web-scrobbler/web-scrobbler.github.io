@@ -15,7 +15,7 @@ This is a simple website for [Web Scrobbler][web-scrobbler-github] extension.
 > npm run format
 
 # Run a server with live reload on changes
-> npm start
+> npm run dev
 ```
 
 [web-scrobbler-github]: https://github.com/web-scrobbler/web-scrobbler

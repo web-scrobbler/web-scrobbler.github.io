@@ -7,19 +7,11 @@ import Footer from '~/components/sections/footer';
 import Starter from '~/components/sections/starter';
 import Top from '~/components/sections/top';
 
-console.log('Index JS running.');
-
 export default function Home() {
 	const [connectors, setConnectors] = createSignal<string[]>();
-	console.log('Loaded Component');
-	console.log(connectors());
-	setInterval(() => console.log(connectors()), 1000);
 	onMount(async () => {
-		console.log('Mounting...');
 		const fetchedConnectors = await getConnectors();
-		console.log('Got connectors', fetchedConnectors);
 		setConnectors(fetchedConnectors);
-		console.log('Set connectors', connectors());
 	});
 	return (
 		<main>

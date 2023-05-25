@@ -19,8 +19,6 @@ function getElementScrollScale() {
 	return window.scrollY / (document.body.scrollHeight - window.innerHeight);
 }
 
-console.log('root JS running.');
-
 export default function Root() {
 	onMount(() => {
 		const setScroll = () => {

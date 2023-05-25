@@ -7,6 +7,8 @@ import Footer from '~/components/sections/footer';
 import Starter from '~/components/sections/starter';
 import Top from '~/components/sections/top';
 
+console.log('Index JS running.');
+
 export default function Home() {
 	const [connectors, setConnectors] = createSignal<string[]>();
 	console.log('Loaded Component');

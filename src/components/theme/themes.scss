@@ -1,0 +1,54 @@
+$themes: (
+	light: (
+		always-light: #fff,
+		always-last-fm: #d82323,
+		always-last-fm-hover: #fc3434,
+		background: #fff,
+		background-site: rgba(255, 255, 255, 0.5),
+		background-site-weak: rgba(255, 255, 255, 0.25),
+		checkbox-inactive: #8e8e8e,
+		sidebar-bg: rgba(250, 235, 235, 0.7),
+		context-bg: rgba(250, 235, 235, 0.95),
+		modal-bg: rgba(255, 255, 255, 0.95),
+		last-fm-bg: #faebeb,
+		last-fm-bg-weak: rgba(250, 235, 235, 0.5),
+		muted-text: #555,
+		text: #222,
+		last-fm: #d82323,
+		confirm: #00b300,
+		site-image: url('/src/assets/images/site-light.jpg'),
+		invert-filter: invert(0%),
+		neuomorphic-bottom: 10px 10px 30px #bbb,
+		neuomorphic-top: -10px -10px 30px #fff9f9,
+	),
+	dark: (
+		always-light: #fff,
+		always-last-fm: #d82323,
+		always-last-fm-hover: #fc3434,
+		background: #1e1e1e,
+		background-site: rgba(30, 30, 30, 0.5),
+		background-site-weak: rgba(30, 30, 30, 0.1),
+		checkbox-inactive: #8e8e8e,
+		sidebar-bg: rgba(194, 57, 55, 0.7),
+		context-bg: rgba(194, 57, 55, 0.95),
+		modal-bg: rgba(40, 40, 40, 0.95),
+		last-fm-bg: #c23937,
+		last-fm-bg-weak: rgba(194, 57, 55, 0.1),
+		muted-text: #bbb,
+		text: #eee,
+		last-fm: #fc3434,
+		confirm: #00b300,
+		site-image: url('/src/assets/images/site-dark.jpg'),
+		invert-filter: invert(100%),
+		neuomorphic-bottom: 10px 10px 30px #111,
+		neuomorphic-top: -10px -10px 30px #333,
+	),
+);
+
+@each $name, $map in $themes {
+	.theme-#{$name} {
+		@each $key, $value in $map {
+			--#{$key}: #{$value};
+		}
+	}
+}

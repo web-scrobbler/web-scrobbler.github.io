@@ -1,0 +1,45 @@
+body {
+	background-color: var(--background);
+	color: var(--text);
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	width: 100%;
+
+	&:before {
+		background: var(--site-image);
+		background-position: 50% calc(var(--scrollPct) * 100%);
+		background-size: auto 200vh;
+		content: '';
+		filter: blur(15px);
+		inset: 0;
+		opacity: 0.2;
+		position: absolute;
+		z-index: -2;
+	}
+
+	main {
+		overflow: hidden;
+	}
+
+	section,
+	footer {
+		padding: 2rem 10%;
+
+		& > :first-child {
+			margin-top: 0;
+		}
+	}
+}
+
+a {
+	color: var(--last-fm);
+	text-decoration: none;
+}
+
+h2 {
+	font-size: 3rem;
+	text-align: center;
+}

@@ -1,31 +1,30 @@
-# website
+# SolidStart
 
-This is a simple website for [Web Scrobbler][web-scrobbler-github] extension.
+Everything you need to build a Solid project, powered by [`solid-start`](https://start.solidjs.com);
 
-## Development
+## Creating a project
 
-```sh
-# Install dependencies
-> npm install
+```bash
+# create a new project in the current directory
+npm init solid@latest
 
-# Lint project files
-> npm run lint
-
-# Format project files
-> npm run format
-
-# Run a server with live reload on changes
-> npm start
+# create a new project in my-app
+npm init solid@latest my-app
 ```
 
-## Credits
+## Developing
 
--   Icons by [Boostrap Icons][bs-icons] and [Simple Icons][simple-icons]
+Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
 
-[bs-icons]: https://icons.getbootstrap.com/
-[simple-icons]: https://simpleicons.org/
-[web-scrobbler-github]: https://github.com/web-scrobbler/web-scrobbler
+```bash
+npm run dev
 
-## License
+# or start the server and open the app in a new browser tab
+npm run dev -- --open
+```
 
-Licensed under the [MIT License](LICENSE.md).
+## Building
+
+Solid apps are built with _adapters_, which optimise your project for deployment to different environments.
+
+By default, `npm run build` will generate a Node app that you can run with `npm start`. To use a different adapter, add it to the `devDependencies` in `package.json` and specify in your `vite.config.js`.

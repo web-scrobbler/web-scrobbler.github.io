@@ -1,2 +1,6 @@
+dist/**
+node_modules/**
+.solid/**
+
 package.json
 package-lock.json

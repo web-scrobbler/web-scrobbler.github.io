@@ -15,15 +15,9 @@ This is a simple website for [Web Scrobbler][web-scrobbler-github] extension.
 > npm run format
 
 # Run a server with live reload on changes
-> npm start
+> npm run dev
 ```
 
-## Credits
-
--   Icons by [Boostrap Icons][bs-icons] and [Simple Icons][simple-icons]
-
-[bs-icons]: https://icons.getbootstrap.com/
-[simple-icons]: https://simpleicons.org/
 [web-scrobbler-github]: https://github.com/web-scrobbler/web-scrobbler
 
 ## License

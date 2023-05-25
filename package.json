@@ -13,7 +13,9 @@
     "dev": "solid-start dev",
     "build": "solid-start build",
     "start": "solid-start start",
-    "lint": "eslint . && stylelint \"**/*.scss\""
+    "lint": "eslint . && stylelint \"**/*.scss\"",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
   },
   "type": "module",
   "devDependencies": {

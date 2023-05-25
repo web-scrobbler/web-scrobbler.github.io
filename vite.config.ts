@@ -3,6 +3,6 @@ import staticAdapter from 'solid-start-static';
 import { defineConfig } from 'vite';
 
 export default defineConfig({
-	base: './',
+	base: '/',
 	plugins: [solid({ adapter: staticAdapter() })],
 });

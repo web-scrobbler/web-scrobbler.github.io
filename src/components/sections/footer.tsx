@@ -123,7 +123,7 @@ export default function Footer() {
 				</div>
 			</div>
 			<span class={styles.copyright}>
-				© 2023
+				© 2023&nbsp;
 				<a
 					href="https://github.com/web-scrobbler/web-scrobbler/graphs/contributors"
 					target="_blank"

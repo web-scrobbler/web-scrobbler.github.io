@@ -11,7 +11,7 @@ export default function Features(props: {
 				<li>
 					<h3>Multiple Scrobbling Services</h3>
 					<p>
-						Scrobble your music to
+						Scrobble your music to&nbsp;
 						<a
 							href="https://www.last.fm/"
 							target="_blank"
@@ -19,7 +19,7 @@ export default function Features(props: {
 						>
 							Last.fm
 						</a>
-						,
+						,&nbsp;
 						<a
 							href="https://libre.fm/"
 							target="_blank"
@@ -27,7 +27,7 @@ export default function Features(props: {
 						>
 							Libre.fm
 						</a>
-						, and
+						, and&nbsp;
 						<a
 							href="https://listenbrainz.org/"
 							target="_blank"
@@ -41,7 +41,7 @@ export default function Features(props: {
 				<li>
 					<h3>Built-in Metadata Filter</h3>
 					<p>
-						The
+						The&nbsp;
 						<a
 							href="http://metadata-filter.vercel.app/"
 							target="_blank"

@@ -15,7 +15,7 @@ export default function Starter() {
 					<h3>Install the extension</h3>
 					<p>
 						Download and install the extension for your browser. You
-						can use the download buttons
+						can use the download buttons&nbsp;
 						<a href="#header">above</a>.
 					</p>
 				</li>
@@ -30,7 +30,7 @@ export default function Starter() {
 				<li>
 					<h3>Start listening to music!</h3>
 					<p>
-						Just open any of websites supported (e.g.
+						Just open any of websites supported (e.g.&nbsp;
 						<a
 							href="https://open.spotify.com/"
 							target="_blank"

@@ -6,7 +6,7 @@ export default function Contributing() {
 			<h2>Contributing</h2>
 			<p class={styles.intro}>
 				Web Scrobbler is an open source project being developed by a
-				great number of
+				great number of&nbsp;
 				<a
 					href="https://github.com/web-scrobbler/web-scrobbler/graphs/contributors"
 					target="_blank"
@@ -30,7 +30,7 @@ export default function Contributing() {
 					&nbsp;bug reports or feature requests
 				</li>
 				<li>
-					Develop new features and submit
+					Develop new features and submit&nbsp;
 					<a
 						href="https://github.com/web-scrobbler/web-scrobbler/pulls"
 						target="_blank"
@@ -40,7 +40,7 @@ export default function Contributing() {
 					</a>
 				</li>
 				<li>
-					Create or improve
+					Create or improve&nbsp;
 					<a
 						href="https://github.com/web-scrobbler/web-scrobbler/wiki/Translate-the-extension"
 						target="_blank"
@@ -52,7 +52,8 @@ export default function Contributing() {
 				<li>Tell your friends about Web Scrobbler</li>
 			</ul>
 			<p>
-				If you want to support development of the extension, consider
+				If you want to support development of the extension,
+				consider&nbsp;
 				<a
 					href="https://opencollective.com/web-scrobbler/donate"
 					target="_blank"
@@ -65,7 +66,7 @@ export default function Contributing() {
 				<br />
 				Donations made in 2023 may be used to have one of our primary
 				contributors work full time on the project for a limited time,
-				see our
+				see our&nbsp;
 				<a
 					href="https://opencollective.com/web-scrobbler"
 					target="_blank"

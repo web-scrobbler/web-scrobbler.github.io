@@ -1,5 +1,14 @@
 {
-  "name": "wss",
+  "name": "web-scrobbler.github.io",
+  "version": "2.0.0",
+  "author": "Web Scrobbler team",
+  "description": "Web Scrobbler website",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/web-scrobbler/web-scrobbler.github.io"
+  },
+  "license": "MIT",
   "scripts": {
     "dev": "solid-start dev",
     "build": "solid-start build",

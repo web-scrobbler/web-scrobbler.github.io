@@ -14,6 +14,7 @@ import {
 } from 'solid-start';
 import './global.scss';
 import './components/theme/themes.scss';
+import MetaTags from './components/metatags';
 
 function getElementScrollScale() {
 	return window.scrollY / (document.body.scrollHeight - window.innerHeight);
@@ -33,7 +34,10 @@ export default function Root() {
 	return (
 		<Html lang="en">
 			<Head>
-				<Title>SolidStart - Bare</Title>
+				<Title>
+					Web Scrobbler — Scrobble music all around the web!
+				</Title>
+				<MetaTags />
 				<Meta charset="utf-8" />
 				<Meta
 					name="viewport"

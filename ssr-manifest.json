@@ -34,12 +34,12 @@
   "node_modules/solid-start/server/ServerContext.tsx": [
   ],
   "node_modules/solid-start/server/components/HttpStatusCode.tsx": [
-    "/assets/_...404_-293823f3.js"
+    "/assets/_...404_-cf80ba2f.js"
   ],
   "node_modules/solid-start/server/types.tsx": [
   ],
   "src/assets/icons.tsx": [
-    "/assets/index-891e66ee.js",
+    "/assets/index-09d3e5a6.js",
     "/assets/index-195a5133.css"
   ],
   "src/components/icontags.tsx": [
@@ -47,31 +47,31 @@
   "src/components/metatags.tsx": [
   ],
   "src/components/sections/connectors.tsx": [
-    "/assets/index-891e66ee.js",
+    "/assets/index-09d3e5a6.js",
     "/assets/index-195a5133.css"
   ],
   "src/components/sections/contributing.tsx": [
-    "/assets/index-891e66ee.js",
+    "/assets/index-09d3e5a6.js",
     "/assets/index-195a5133.css"
   ],
   "src/components/sections/features.tsx": [
-    "/assets/index-891e66ee.js",
+    "/assets/index-09d3e5a6.js",
     "/assets/index-195a5133.css"
   ],
   "src/components/sections/footer.tsx": [
-    "/assets/index-891e66ee.js",
+    "/assets/index-09d3e5a6.js",
     "/assets/index-195a5133.css"
   ],
   "src/components/sections/starter.tsx": [
-    "/assets/index-891e66ee.js",
+    "/assets/index-09d3e5a6.js",
     "/assets/index-195a5133.css"
   ],
   "src/components/sections/styles.module.scss?used": [
-    "/assets/index-891e66ee.js",
+    "/assets/index-09d3e5a6.js",
     "/assets/index-195a5133.css"
   ],
   "src/components/sections/top.tsx": [
-    "/assets/index-891e66ee.js",
+    "/assets/index-09d3e5a6.js",
     "/assets/index-195a5133.css"
   ],
   "src/components/theme/themes.scss": [
@@ -85,10 +85,10 @@
   "src/root.tsx": [
   ],
   "src/routes/[...404].tsx": [
-    "/assets/_...404_-293823f3.js"
+    "/assets/_...404_-cf80ba2f.js"
   ],
   "src/routes/index.tsx": [
-    "/assets/index-891e66ee.js",
+    "/assets/index-09d3e5a6.js",
     "/assets/index-195a5133.css"
   ]
 }

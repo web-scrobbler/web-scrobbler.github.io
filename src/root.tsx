@@ -39,6 +39,10 @@ export default function Root() {
 				</Title>
 				<MetaTags />
 				<Meta charset="utf-8" />
+				<Meta
+					name="viewport"
+					content="initial-scale=1.0,width=device-width"
+				/>
 				<IconTags />
 			</Head>
 			<Body>

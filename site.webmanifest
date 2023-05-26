@@ -1,6 +1,6 @@
 {
-	"name": "",
-	"short_name": "",
+	"name": "Web Scrobbler",
+	"short_name": "Web Scrobbler",
 	"icons": [
 		{
 			"src": "/android-chrome-192x192.png",

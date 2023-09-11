@@ -40,7 +40,7 @@ export default function Top() {
 				</div>
 				<div class={styles.iconGroup}>
 					<a
-						href="https://youtu.be/dQw4w9WgXcQ"
+						href="https://apps.apple.com/app/web-scrobbler/id6449224218"
 						title="Download on the App Store"
 						target="_blank"
 						rel="noopener noreferrer"

@@ -34,38 +34,38 @@
   "node_modules/solid-start/server/ServerContext.tsx": [
   ],
   "node_modules/solid-start/server/components/HttpStatusCode.tsx": [
-    "/assets/_...404_-c355db17.js"
+    "/assets/_...404_-680f85aa.js"
   ],
   "node_modules/solid-start/server/types.tsx": [
   ],
   "src/assets/icons.tsx": [
-    "/assets/index-a07ef3ba.js"
+    "/assets/index-79d4092f.js"
   ],
   "src/components/icontags.tsx": [
   ],
   "src/components/metatags.tsx": [
   ],
   "src/components/sections/connectors.tsx": [
-    "/assets/index-a07ef3ba.js"
+    "/assets/index-79d4092f.js"
   ],
   "src/components/sections/contributing.tsx": [
-    "/assets/index-a07ef3ba.js"
+    "/assets/index-79d4092f.js"
   ],
   "src/components/sections/features.tsx": [
-    "/assets/index-a07ef3ba.js"
+    "/assets/index-79d4092f.js"
   ],
   "src/components/sections/footer.tsx": [
-    "/assets/index-a07ef3ba.js"
+    "/assets/index-79d4092f.js"
   ],
   "src/components/sections/starter.tsx": [
-    "/assets/index-a07ef3ba.js"
+    "/assets/index-79d4092f.js"
   ],
   "src/components/sections/styles.module.scss?used": [
     "/assets/styles.module-fb889907.js",
     "/assets/styles-0daa483c.css"
   ],
   "src/components/sections/top.tsx": [
-    "/assets/index-a07ef3ba.js"
+    "/assets/index-79d4092f.js"
   ],
   "src/components/theme/themes.scss": [
   ],
@@ -78,12 +78,12 @@
   "src/root.tsx": [
   ],
   "src/routes/[...404].tsx": [
-    "/assets/_...404_-c355db17.js"
+    "/assets/_...404_-680f85aa.js"
   ],
   "src/routes/index.tsx": [
-    "/assets/index-a07ef3ba.js"
+    "/assets/index-79d4092f.js"
   ],
-  "src/routes/websocket.tsx": [
-    "/assets/websocket-fa433b8d.js"
+  "src/routes/webhook.tsx": [
+    "/assets/webhook-c46ac502.js"
   ]
 }

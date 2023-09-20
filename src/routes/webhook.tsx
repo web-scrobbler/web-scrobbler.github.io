@@ -22,7 +22,7 @@ declare global {
 	}
 }
 
-export default function WebSocket() {
+export default function WebHook() {
 	const [params, setParams] = createSignal<URLSearchParams>();
 
 	onMount(() => {

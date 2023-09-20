@@ -1,4 +1,10 @@
 {
+  "_styles.module-fb889907.js": {
+    "css": [
+      "assets/styles-0daa483c.css"
+    ],
+    "file": "assets/styles.module-fb889907.js"
+  },
   "src/entry-client.css": {
     "file": "assets/entry-client-d38d08c4.css",
     "src": "src/entry-client.css"
@@ -9,33 +15,41 @@
     ],
     "dynamicImports": [
       "src/routes/[...404].tsx",
-      "src/routes/index.tsx"
+      "src/routes/index.tsx",
+      "src/routes/websocket.tsx"
     ],
-    "file": "assets/entry-client-1346fe4a.js",
+    "file": "assets/entry-client-3f06b232.js",
     "isEntry": true,
     "src": "src/entry-client.tsx"
   },
   "src/routes/[...404].tsx": {
-    "file": "assets/_...404_-06f91d6b.js",
+    "file": "assets/_...404_-c355db17.js",
     "imports": [
       "src/entry-client.tsx"
     ],
     "isDynamicEntry": true,
     "src": "src/routes/[...404].tsx"
   },
-  "src/routes/index.css": {
-    "file": "assets/index-195a5133.css",
-    "src": "src/routes/index.css"
-  },
   "src/routes/index.tsx": {
-    "css": [
-      "assets/index-195a5133.css"
-    ],
-    "file": "assets/index-e52dcefd.js",
+    "file": "assets/index-a07ef3ba.js",
     "imports": [
-      "src/entry-client.tsx"
+      "src/entry-client.tsx",
+      "_styles.module-fb889907.js"
     ],
     "isDynamicEntry": true,
     "src": "src/routes/index.tsx"
+  },
+  "src/routes/websocket.tsx": {
+    "file": "assets/websocket-fa433b8d.js",
+    "imports": [
+      "src/entry-client.tsx",
+      "_styles.module-fb889907.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "src/routes/websocket.tsx"
+  },
+  "styles.css": {
+    "file": "assets/styles-0daa483c.css",
+    "src": "styles.css"
   }
 }

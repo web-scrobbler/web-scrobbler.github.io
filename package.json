@@ -29,7 +29,7 @@
     "postcss": "^8.4.30",
     "prettier": "^2.8.8",
     "prettier-config-web-scrobbler": "^0.1.0",
-    "sass": "^1.63.6",
+    "sass": "^1.68.0",
     "solid-start-static": "^0.2.26",
     "stylelint": "^13.13.1",
     "stylelint-config-web-scrobbler": "^0.2.0",

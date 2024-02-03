@@ -1,5 +1,9 @@
 name: Format
-on: [push, pull_request]
+on:
+  push:
+    branches: [master]
+  pull_request:
+    types: [opened, synchronize]
 jobs:
   lint:
     name: Check formatting

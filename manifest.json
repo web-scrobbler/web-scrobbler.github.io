@@ -18,12 +18,12 @@
       "src/routes/index.tsx",
       "src/routes/webhook.tsx"
     ],
-    "file": "assets/entry-client-5ac6e5c8.js",
+    "file": "assets/entry-client-fba7cd3d.js",
     "isEntry": true,
     "src": "src/entry-client.tsx"
   },
   "src/routes/[...404].tsx": {
-    "file": "assets/_...404_-3c219e51.js",
+    "file": "assets/_...404_-b06ce224.js",
     "imports": [
       "src/entry-client.tsx"
     ],
@@ -31,7 +31,7 @@
     "src": "src/routes/[...404].tsx"
   },
   "src/routes/index.tsx": {
-    "file": "assets/index-3e183e81.js",
+    "file": "assets/index-e1d49e98.js",
     "imports": [
       "src/entry-client.tsx",
       "_styles.module-fb889907.js"
@@ -40,7 +40,7 @@
     "src": "src/routes/index.tsx"
   },
   "src/routes/webhook.tsx": {
-    "file": "assets/webhook-5103048f.js",
+    "file": "assets/webhook-29faded7.js",
     "imports": [
       "src/entry-client.tsx",
       "_styles.module-fb889907.js"

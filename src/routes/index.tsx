@@ -28,7 +28,7 @@ export default function Home() {
 
 async function getConnectors() {
 	const res = await fetch(
-		'https://raw.githubusercontent.com/web-scrobbler/website-resources/master/resources/connectors.json'
+		'https://raw.githubusercontent.com/web-scrobbler/website-resources/master/resources/connectors.json',
 	);
 	const connectors = (await res.json()) as string[];
 	return connectors.sort(compareIgnoreCase);

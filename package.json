@@ -20,7 +20,7 @@
   "type": "module",
   "devDependencies": {
     "@types/node": "^20.11.24",
-    "@typescript-eslint/eslint-plugin": "^7.1.0",
+    "@typescript-eslint/eslint-plugin": "^8.12.2",
     "esbuild": "^0.20.1",
     "eslint": "^8.41.0",
     "eslint-plugin-react": "^7.33.2",

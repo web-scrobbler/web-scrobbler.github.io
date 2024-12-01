@@ -41,7 +41,7 @@
     "@solidjs/router": "^0.8.4",
     "solid-js": "^1.8.15",
     "solid-start": "^0.2.26",
-    "undici": "^5.28.3"
+    "undici": "^7.0.0"
   },
   "engines": {
     "node": ">=18.0.0"

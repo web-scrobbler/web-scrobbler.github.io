@@ -17,7 +17,7 @@ export default function MetaTags() {
 
 			{/* Open Graph / Facebook */}
 			<Meta property="og:type" content="website" />
-			<Meta property="og:url" content="https://web-scrobbler.com/" />
+			<Meta property="og:url" content="https://webscrobbler.com/" />
 			<Meta
 				property="og:title"
 				content="Web Scrobbler — Scrobble music all around the web!"
@@ -33,7 +33,7 @@ export default function MetaTags() {
 
 			{/* Twitter */}
 			<Meta property="twitter:card" content="summary_large_image" />
-			<Meta property="twitter:url" content="https://web-scrobbler.com/" />
+			<Meta property="twitter:url" content="https://webscrobbler.com/" />
 			<Meta
 				property="twitter:title"
 				content="Web Scrobbler — Scrobble music all around the web!"

@@ -878,17 +878,6 @@ export const WSIcon = (props: { class?: string }) => (
 	</svg>
 );
 
-export const ExpandMore = () => (
-	<svg
-		xmlns="http://www.w3.org/2000/svg"
-		height="48"
-		viewBox="0 -960 960 960"
-		width="48"
-	>
-		<path d="M480-345 240-585l43-43 197 198 197-197 43 43-240 239Z" />
-	</svg>
-);
-
 export const DiscordIcon = (props: { class?: string }) => (
 	<svg
 		class={props.class}
@@ -954,5 +943,36 @@ export const TwitterIcon = (props: { class?: string }) => (
 				c-3.77,11.69-11.66,21.62-22.2,27.93c10.01-1.18,19.79-3.86,29-7.95C240.37,35.29,231.83,44.14,221.95,51.29z"
 			/>
 		</g>
+	</svg>
+);
+
+export const SunIcon = (props: { class?: string }) => (
+	<svg
+		class={props.class}
+		fill="none"
+		stroke="currentColor"
+		stroke-linecap="round"
+		stroke-linejoin="round"
+		stroke-width="2"
+		viewBox="0 0 24 24"
+		xmlns="http://www.w3.org/2000/svg"
+	>
+		<circle cx="12" cy="12" r="4" />
+		<path d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32 1.41 1.41M2 12h2m16 0h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41" />
+	</svg>
+);
+
+export const MoonIcon = (props: { class?: string }) => (
+	<svg
+		class={props.class}
+		fill="none"
+		stroke="currentColor"
+		stroke-linecap="round"
+		stroke-linejoin="round"
+		stroke-width="2"
+		viewBox="0 0 24 24"
+		xmlns="http://www.w3.org/2000/svg"
+	>
+		<path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" />
 	</svg>
 );

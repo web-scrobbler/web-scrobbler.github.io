@@ -4,27 +4,17 @@
  */
 
 /**
- * Initializes the theme from storage. To be run on load.
- */
-export function initializeThemes() {
-	const theme = localStorage.getItem('theme');
-	if (theme) {
-		document.body.classList.add(processTheme(theme));
-		return;
-	}
-
-	updateTheme('theme-system');
-}
-
-/**
  * Change the theme and update DOM to reflect the change.
  *
  * @param theme - New theme
  */
-export async function updateTheme(theme: ModifiedTheme) {
-	document.body.className = '';
-	document.body.classList.add(await processTheme(theme));
-	await localStorage.setItem('theme', theme);
+export function updateTheme(theme: ModifiedTheme) {
+	document.documentElement.classList.remove(
+		'theme-light',
+		'theme-dark',
+	);
+	document.documentElement.classList.add(processTheme(theme));
+	localStorage.setItem('theme', theme);
 }
 
 /**
@@ -56,6 +46,6 @@ export const modifiedThemeList = themeList.map(
  *
  * @returns current theme
  */
-export async function getTheme(): Promise<ModifiedTheme> {
+export function getTheme(): ModifiedTheme {
 	return (localStorage.getItem('theme') || 'theme-system') as ModifiedTheme;
 }

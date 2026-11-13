@@ -7,6 +7,7 @@
 	min-height: 92vh;
 	padding: 4rem 10% 5rem;
 	position: relative;
+	text-align: center;
 
 	&::before {
 		background: radial-gradient(
@@ -43,10 +44,19 @@
 	}
 
 	.headerText {
-		font-size: clamp(1rem, 1.6vw, 1.25rem);
-		margin: 1rem 0 0;
-		max-width: 40rem;
+		font-size: clamp(0.95rem, 1.5vw, 1.15rem);
+		margin: 1rem auto 0;
 		position: relative;
+		text-align: center;
+		white-space: nowrap;
+		width: max-content;
+		max-width: 100%;
+
+		@media screen and (width <= 45rem) {
+			max-width: 40rem;
+			white-space: normal;
+			width: auto;
+		}
 	}
 
 	.badges {
@@ -339,8 +349,10 @@
 	.count {
 		color: var(--text);
 		font-size: 1rem;
-		margin-bottom: 2rem;
+		margin: 0 auto 2rem;
+		max-width: 40rem;
 		opacity: 0.75;
+		text-align: center;
 	}
 
 	.connectorList {
@@ -428,14 +440,17 @@
 
 	ul {
 		list-style: disc;
+		list-style-position: inside;
 		margin: 0 auto 1.5rem;
 		max-width: 40rem;
-		padding-left: 1.25rem;
+		padding-left: 0;
+		text-align: center;
 	}
 
 	p:not(.intro) {
 		margin: 0 auto 1rem;
 		max-width: 46rem;
+		text-align: center;
 	}
 }
 

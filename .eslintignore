@@ -1,7 +1,0 @@
-// Allow ESLint to lint hidden files
-!.*
-
-dist/**
-node_modules/**
-.solid/**
-src/assets/icons.tsx

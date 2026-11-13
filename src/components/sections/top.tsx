@@ -1,3 +1,4 @@
+import { createSignal } from 'solid-js';
 import styles from './styles.module.scss';
 import {
 	WSIcon,
@@ -8,9 +9,22 @@ import {
 } from '../../assets/icons';
 
 export default function Top() {
+	const [spinning, setSpinning] = createSignal(false);
+	const spin = () => {
+		setSpinning(false);
+		requestAnimationFrame(() => setSpinning(true));
+	};
+
 	return (
 		<header class={styles.header} id="header">
-			<WSIcon class={styles.topIcon} />
+			<div class={styles.pattern} aria-hidden="true" />
+			<button
+				class={`${styles.topIcon} ${spinning() ? styles.spinning : ''}`}
+				onClick={spin}
+				aria-label="Spin the Web Scrobbler logo"
+			>
+				<WSIcon />
+			</button>
 			<h1>Web Scrobbler</h1>
 			<h2>Scrobble music all around the web!</h2>
 			<p class={styles.headerText}>

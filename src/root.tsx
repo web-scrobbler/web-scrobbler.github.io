@@ -1,5 +1,5 @@
 // @refresh reload
-import { Suspense, onMount } from 'solid-js';
+import { Suspense } from 'solid-js';
 import {
 	Body,
 	ErrorBoundary,
@@ -16,21 +16,7 @@ import './components/theme/themes.scss';
 import MetaTags from './components/metatags';
 import IconTags from './components/icontags';
 
-function getElementScrollScale() {
-	return window.scrollY / (document.body.scrollHeight - window.innerHeight);
-}
-
 export default function Root() {
-	onMount(() => {
-		const setScroll = () => {
-			const scroll = getElementScrollScale();
-			document.body.style.setProperty('--scrollPct', scroll.toString());
-		};
-		setScroll();
-		document.addEventListener('scroll', setScroll);
-		return () => document.removeEventListener('scroll', setScroll);
-	});
-
 	return (
 		<Html lang="en">
 			<Head>
@@ -44,6 +30,11 @@ export default function Root() {
 					content="initial-scale=1.0,width=device-width"
 				/>
 				<IconTags />
+				{/* eslint-disable solid/no-innerhtml -- inline theme bootstrap script */}
+				<script
+					innerHTML={`try{var t=localStorage.getItem('theme')||'theme-system';if(t==='theme-system'){t=window.matchMedia('(prefers-color-scheme: dark)').matches?'theme-dark':'theme-light'}document.documentElement.classList.add(t)}catch(e){}`}
+				/>
+				{/* eslint-enable solid/no-innerhtml */}
 			</Head>
 			<Body>
 				<Suspense>

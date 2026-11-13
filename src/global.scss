@@ -1,8 +1,13 @@
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	background-color: var(--background);
 	color: var(--text);
-	font-family: Helvetica, Arial, sans-serif;
-	font-size: 14px;
+	font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+	font-size: 16px;
+	line-height: 1.6;
 	margin: 0;
 	padding: 0;
 	position: relative;
@@ -14,7 +19,7 @@ body {
 
 	section,
 	footer {
-		padding: 2rem 10%;
+		padding: 4rem 10%;
 
 		& > :first-child {
 			margin-top: 0;
@@ -25,9 +30,22 @@ body {
 a {
 	color: var(--last-fm);
 	text-decoration: none;
+
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+h1,
+h2,
+h3 {
+	line-height: 1.2;
 }
 
 h2 {
-	font-size: 3rem;
+	font-size: 2rem;
+	font-weight: 700;
+	letter-spacing: -0.01em;
+	margin: 0 0 1.5rem;
 	text-align: center;
 }

@@ -1,12 +1,37 @@
+import { For, createSignal, onMount } from 'solid-js';
 import {
 	DiscordIcon,
 	EmailIcon,
 	GitHubIcon,
 	TwitterIcon,
 } from '~/assets/icons';
+import {
+	ModifiedTheme,
+	getTheme,
+	themeList,
+	updateTheme,
+} from '~/components/theme/themes';
 import styles from './styles.module.scss';
 
+const themeNames: Record<string, string> = {
+	system: 'System',
+	dark: 'Dark',
+	light: 'Light',
+};
+
 export default function Footer() {
+	const [theme, setTheme] = createSignal<ModifiedTheme>('theme-system');
+
+	onMount(async () => {
+		setTheme(await getTheme());
+	});
+
+	const selectTheme = (t: string) => {
+		const modified = `theme-${t}` as ModifiedTheme;
+		setTheme(modified);
+		updateTheme(modified);
+	};
+
 	return (
 		<footer class={styles.footer}>
 			<div class={styles.footerContent}>
@@ -84,43 +109,53 @@ export default function Footer() {
 					</ul>
 				</div>
 			</div>
-			<div class={styles.icons}>
-				<div class={styles.iconGroup}>
-					<a
-						href="https://discord.gg/u99wNWw"
-						title="Discord"
-						target="_blank"
-						rel="noopener noreferrer"
-					>
-						<DiscordIcon class={styles.icon} />
-					</a>
-					<a
-						href="mailto:web.scrobbler@gmail.com"
-						title="E-mail"
-						target="_blank"
-						rel="noopener noreferrer"
-					>
-						<EmailIcon class={styles.icon} />
-					</a>
-				</div>
-				<div class={styles.iconGroup}>
-					<a
-						href="https://github.com/web-scrobbler/web-scrobbler"
-						title="GitHub"
-						target="_blank"
-						rel="noopener noreferrer"
-					>
-						<GitHubIcon class={styles.icon} />
-					</a>
-					<a
-						href="https://twitter.com/web_scrobbler"
-						title="Twitter"
-						target="_blank"
-						rel="noopener noreferrer"
-					>
-						<TwitterIcon class={styles.icon} />
-					</a>
-				</div>
+			<div class={styles.socialIcons}>
+				<a
+					href="https://discord.gg/u99wNWw"
+					title="Discord"
+					target="_blank"
+					rel="noopener noreferrer"
+				>
+					<DiscordIcon />
+				</a>
+				<a
+					href="mailto:web.scrobbler@gmail.com"
+					title="E-mail"
+					target="_blank"
+					rel="noopener noreferrer"
+				>
+					<EmailIcon />
+				</a>
+				<a
+					href="https://github.com/web-scrobbler/web-scrobbler"
+					title="GitHub"
+					target="_blank"
+					rel="noopener noreferrer"
+				>
+					<GitHubIcon />
+				</a>
+				<a
+					href="https://twitter.com/web_scrobbler"
+					title="Twitter"
+					target="_blank"
+					rel="noopener noreferrer"
+				>
+					<TwitterIcon />
+				</a>
+			</div>
+			<div class={styles.themeSwitch}>
+				<For each={themeList}>
+					{(t) => (
+						<button
+							class={
+								theme() === `theme-${t}` ? styles.active : ''
+							}
+							onClick={() => selectTheme(t)}
+						>
+							{themeNames[t]}
+						</button>
+					)}
+				</For>
 			</div>
 			<span class={styles.copyright}>
 				© 2023&nbsp;

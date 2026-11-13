@@ -19,35 +19,49 @@
   },
   "type": "module",
   "devDependencies": {
-    "@types/node": "^22.10.3",
-    "@typescript-eslint/eslint-plugin": "^7.1.0",
-    "esbuild": "^0.25.0",
-    "eslint": "^8.41.0",
+    "@types/node": "^26.6.6",
+    "@typescript-eslint/eslint-plugin": "^8.72.2",
+    "esbuild": "^0.28.2",
+    "eslint": "^9.39.5",
     "eslint-plugin-react": "^7.33.2",
-    "eslint-plugin-solid": "^0.13.1",
-    "eslint-plugin-tsdoc": "^0.2.17",
+    "eslint-plugin-solid": "^0.19.0",
+    "eslint-plugin-tsdoc": "^0.5.4",
     "postcss": "^8.4.31",
     "prettier": "^3.2.5",
     "prettier-config-web-scrobbler": "^0.1.0",
     "sass": "^1.77.4",
     "solid-start-static": "^0.3.11",
-    "stylelint": "^13.13.1",
-    "stylelint-config-web-scrobbler": "^0.2.0",
+    "stylelint": "^18.0.0",
+    "stylelint-config-recommended-scss": "^18.0.0",
+    "stylelint-config-standard-scss": "^18.0.0",
     "typescript": "^5.3.3",
     "vite": "^4.5.9"
   },
   "dependencies": {
-    "@solidjs/meta": "^0.28.7",
+    "@solidjs/meta": "^0.29.8",
     "@solidjs/router": "^0.8.4",
     "solid-js": "^1.8.15",
-    "solid-start": "^0.2.26",
-    "undici": "^5.28.5"
+    "solid-start": "^0.3.11",
+    "undici": "^8.12.4"
   },
   "engines": {
     "node": ">=18.0.0"
   },
   "prettier": "prettier-config-web-scrobbler",
   "stylelint": {
-    "extends": "stylelint-config-web-scrobbler"
+    "extends": [
+      "stylelint-config-standard-scss"
+    ],
+    "rules": {
+      "selector-class-pattern": null,
+      "scss/at-rule-no-unknown": [
+        true,
+        {
+          "ignoreAtRules": [
+            "use"
+          ]
+        }
+      ]
+    }
   }
 }

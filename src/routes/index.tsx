@@ -31,7 +31,9 @@ async function getConnectors() {
 		'https://raw.githubusercontent.com/web-scrobbler/website-resources/master/resources/connectors.json',
 	);
 	const connectors = (await res.json()) as string[];
-	return connectors.sort(compareIgnoreCase);
+	return connectors
+		.filter((connector) => connector.trim().length > 0)
+		.sort(compareIgnoreCase);
 }
 
 function compareIgnoreCase(a: string, b: string) {

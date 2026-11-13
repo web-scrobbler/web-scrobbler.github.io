@@ -158,7 +158,7 @@ export default function Footer() {
 				</For>
 			</div>
 			<span class={styles.copyright}>
-				© 2023&nbsp;
+				© {new Date().getFullYear()}&nbsp;
 				<a
 					href="https://github.com/web-scrobbler/web-scrobbler/graphs/contributors"
 					target="_blank"

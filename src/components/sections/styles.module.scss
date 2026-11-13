@@ -1,6 +1,7 @@
 .header {
 	$top: #ff4d5e;
 	$bottom: #c9182f;
+
 	background: radial-gradient(120% 90% at 50% -10%, $top, $bottom 75%);
 	color: #fff;
 	min-height: 92vh;
@@ -10,7 +11,7 @@
 	&::before {
 		background: radial-gradient(
 			60% 50% at 85% 110%,
-			rgba(235, 116, 56, 0.35),
+			rgb(235 116 56 / 35%),
 			transparent 70%
 		);
 		content: '';
@@ -20,7 +21,7 @@
 	}
 
 	.topIcon {
-		filter: drop-shadow(0 1rem 2rem rgba(0, 0, 0, 0.35));
+		filter: drop-shadow(0 1rem 2rem rgb(0 0 0 / 35%));
 		height: min(24vw, 30vh);
 		width: min(24vw, 30vh);
 	}
@@ -59,7 +60,7 @@
 		a {
 			align-items: center;
 			background: #fff;
-			border: 1px solid rgba(255, 255, 255, 0.6);
+			border: 1px solid rgb(255 255 255 / 60%);
 			border-radius: 999px;
 			color: #2b2321;
 			display: inline-flex;
@@ -72,7 +73,7 @@
 
 			&:hover {
 				background: #fff5f4;
-				box-shadow: 0 0.35rem 1rem rgba(0, 0, 0, 0.25);
+				box-shadow: 0 0.35rem 1rem rgb(0 0 0 / 25%);
 				transform: translateY(-2px);
 			}
 
@@ -93,7 +94,7 @@
 	&::before {
 		background: radial-gradient(
 			60% 80% at 50% -20%,
-			rgba(255, 255, 255, 0.18),
+			rgb(255 255 255 / 18%),
 			transparent 70%
 		);
 		content: '';
@@ -149,7 +150,7 @@
 
 		a {
 			align-items: center;
-			background: rgba(255, 255, 255, 0.12);
+			background: rgb(255 255 255 / 12%);
 			border-radius: 50%;
 			display: inline-flex;
 			height: 2.75rem;
@@ -160,7 +161,7 @@
 			width: 2.75rem;
 
 			&:hover {
-				background: rgba(255, 255, 255, 0.25);
+				background: rgb(255 255 255 / 25%);
 				transform: translateY(-2px);
 			}
 
@@ -172,7 +173,7 @@
 	}
 
 	.themeSwitch {
-		border-top: 1px solid rgba(255, 255, 255, 0.2);
+		border-top: 1px solid rgb(255 255 255 / 20%);
 		display: flex;
 		flex-wrap: wrap;
 		gap: 0.5rem;
@@ -184,7 +185,7 @@
 		button {
 			appearance: none;
 			background: transparent;
-			border: 1px solid rgba(255, 255, 255, 0.3);
+			border: 1px solid rgb(255 255 255 / 30%);
 			border-radius: 999px;
 			color: #fff;
 			cursor: pointer;
@@ -199,7 +200,7 @@
 			}
 
 			&.active {
-				background: rgba(255, 255, 255, 0.22);
+				background: rgb(255 255 255 / 22%);
 				opacity: 1;
 			}
 		}
@@ -238,7 +239,7 @@
 		max-width: 72rem;
 		padding: 0;
 
-		@media screen and (max-width: 1100px) {
+		@media screen and (width <= 1100px) {
 			flex-direction: column;
 		}
 
@@ -253,7 +254,7 @@
 
 			&:hover {
 				border-color: var(--card-border-hover);
-				box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.08);
+				box-shadow: 0 0.5rem 1.5rem rgb(0 0 0 / 8%);
 				transform: translateY(-3px);
 			}
 
@@ -297,7 +298,7 @@
 
 			&:hover {
 				border-color: var(--card-border-hover);
-				box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.08);
+				box-shadow: 0 0.5rem 1.5rem rgb(0 0 0 / 8%);
 				transform: translateY(-3px);
 			}
 

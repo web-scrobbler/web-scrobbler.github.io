@@ -1,15 +1,16 @@
 {
+  "$schema": "https://json.schemastore.org/tsconfig",
   "compilerOptions": {
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
     "target": "ESNext",
     "module": "ESNext",
-    "moduleResolution": "node",
+    "moduleResolution": "bundler",
     "jsxImportSource": "solid-js",
     "jsx": "preserve",
     "strict": true,
-    "types": ["solid-start/env"],
-    "baseUrl": "./",
+    "skipLibCheck": true,
+    "types": ["vite/client", "solid-start/env"],
     "paths": {
       "~/*": ["./src/*"]
     }

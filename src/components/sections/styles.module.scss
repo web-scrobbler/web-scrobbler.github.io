@@ -4,6 +4,7 @@
 
 	background: radial-gradient(120% 90% at 50% -10%, $top, $bottom 75%);
 	color: #fff;
+	isolation: isolate;
 	min-height: 92vh;
 	padding: 4rem 10% 5rem;
 	position: relative;
@@ -21,10 +22,76 @@
 		position: absolute;
 	}
 
+	.pattern {
+		animation:
+			pattern-drift 20s linear infinite,
+			pattern-breathe 8s ease-in-out infinite;
+		background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60' viewBox='0 0 60 60'%3E%3Cpath d='M30 0L60 30L30 60L0 30Z' fill='none' stroke='white' stroke-opacity='0.22'/%3E%3Cg fill='white' fill-opacity='0.22'%3E%3Ccircle cx='30' cy='30' r='1.5'/%3E%3Ccircle cx='0' cy='0' r='1.5'/%3E%3Ccircle cx='60' cy='0' r='1.5'/%3E%3Ccircle cx='0' cy='60' r='1.5'/%3E%3Ccircle cx='60' cy='60' r='1.5'/%3E%3C/g%3E%3C/svg%3E");
+		background-size: 60px 60px;
+		inset: 0;
+		mask-image: radial-gradient(
+			ellipse 75% 85% at 50% 45%,
+			#000 35%,
+			transparent 100%
+		);
+		pointer-events: none;
+		position: absolute;
+		z-index: -1;
+
+		@media (prefers-reduced-motion: reduce) {
+			animation: none;
+		}
+	}
+
+	@keyframes pattern-drift {
+		to {
+			background-position: 60px 60px;
+		}
+	}
+
+	@keyframes pattern-breathe {
+		0%,
+		100% {
+			opacity: 0.2;
+		}
+
+		50% {
+			opacity: 1;
+		}
+	}
+
 	.topIcon {
+		appearance: none;
+		background: transparent;
+		border: 0;
+		color: inherit;
+		cursor: pointer;
+		padding: 0;
 		filter: drop-shadow(0 1rem 2rem rgb(0 0 0 / 35%));
 		height: min(24vw, 30vh);
 		width: min(24vw, 30vh);
+
+		svg {
+			display: block;
+			height: 100%;
+			width: 100%;
+		}
+
+		&.spinning {
+			animation: vinyl-spin 3s cubic-bezier(0.42, 0, 0.58, 1) both;
+		}
+
+		@keyframes vinyl-spin {
+			to {
+				transform: rotate(1080deg);
+			}
+		}
+
+		@media (prefers-reduced-motion: reduce) {
+			&.spinning {
+				animation: none;
+			}
+		}
 	}
 
 	h1 {

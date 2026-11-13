@@ -1,71 +1,102 @@
 {
-  "/*404": [
-    {
+  "/*404": {
+    "type": "route",
+    "script": {
       "type": "script",
-      "href": "/assets/_...404_-b4f7bf83.js"
+      "href": "/assets/_...404_-90d5d744.js"
     },
-    {
+    "assets": [
+      {
+        "type": "script",
+        "href": "/assets/_...404_-90d5d744.js"
+      },
+      {
+        "type": "script",
+        "href": "/assets/entry-client-43f2d769.js"
+      },
+      {
+        "type": "style",
+        "href": "/assets/entry-client-0f002792.css"
+      }
+    ]
+  },
+  "/": {
+    "type": "route",
+    "script": {
       "type": "script",
-      "href": "/assets/entry-client-a90e1c10.js"
+      "href": "/assets/index-a74fe930.js"
     },
-    {
-      "type": "style",
-      "href": "/assets/entry-client-d38d08c4.css"
-    }
-  ],
-  "/": [
-    {
+    "assets": [
+      {
+        "type": "script",
+        "href": "/assets/index-a74fe930.js"
+      },
+      {
+        "type": "script",
+        "href": "/assets/entry-client-43f2d769.js"
+      },
+      {
+        "type": "style",
+        "href": "/assets/entry-client-0f002792.css"
+      },
+      {
+        "type": "script",
+        "href": "/assets/styles.module-8e5ff95e.js"
+      },
+      {
+        "type": "style",
+        "href": "/assets/styles-349d228a.css"
+      }
+    ]
+  },
+  "/webhook": {
+    "type": "route",
+    "script": {
       "type": "script",
-      "href": "/assets/index-678447b5.js"
+      "href": "/assets/webhook-ee3a70aa.js"
     },
-    {
+    "assets": [
+      {
+        "type": "script",
+        "href": "/assets/webhook-ee3a70aa.js"
+      },
+      {
+        "type": "script",
+        "href": "/assets/entry-client-43f2d769.js"
+      },
+      {
+        "type": "style",
+        "href": "/assets/entry-client-0f002792.css"
+      },
+      {
+        "type": "script",
+        "href": "/assets/styles.module-8e5ff95e.js"
+      },
+      {
+        "type": "style",
+        "href": "/assets/styles-349d228a.css"
+      }
+    ]
+  },
+  "entry-client": {
+    "type": "entry",
+    "script": {
       "type": "script",
-      "href": "/assets/entry-client-a90e1c10.js"
+      "href": "/assets/entry-client-43f2d769.js"
     },
-    {
-      "type": "style",
-      "href": "/assets/entry-client-d38d08c4.css"
-    },
-    {
-      "type": "script",
-      "href": "/assets/styles.module-fb889907.js"
-    },
-    {
-      "type": "style",
-      "href": "/assets/styles-0daa483c.css"
-    }
-  ],
-  "/webhook": [
-    {
-      "type": "script",
-      "href": "/assets/webhook-73871b46.js"
-    },
-    {
-      "type": "script",
-      "href": "/assets/entry-client-a90e1c10.js"
-    },
-    {
-      "type": "style",
-      "href": "/assets/entry-client-d38d08c4.css"
-    },
-    {
-      "type": "script",
-      "href": "/assets/styles.module-fb889907.js"
-    },
-    {
-      "type": "style",
-      "href": "/assets/styles-0daa483c.css"
-    }
-  ],
-  "entry-client": [
-    {
-      "type": "script",
-      "href": "/assets/entry-client-a90e1c10.js"
-    },
-    {
-      "type": "style",
-      "href": "/assets/entry-client-d38d08c4.css"
-    }
-  ],
-  "index.html": []
+    "assets": [
+      {
+        "type": "script",
+        "href": "/assets/entry-client-43f2d769.js"
+      },
+      {
+        "type": "style",
+        "href": "/assets/entry-client-0f002792.css"
+      }
+    ]
+  },
+  "index.html": {
+    "type": "entry",
+    "assets": []
+  }
 }

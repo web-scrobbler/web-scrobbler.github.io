@@ -34,42 +34,43 @@
   "node_modules/solid-start/server/ServerContext.tsx": [
   ],
   "node_modules/solid-start/server/components/HttpStatusCode.tsx": [
-    "/assets/_...404_-b4f7bf83.js"
+    "/assets/_...404_-90d5d744.js"
   ],
   "node_modules/solid-start/server/types.tsx": [
   ],
   "src/assets/icons.tsx": [
-    "/assets/index-678447b5.js"
+    "/assets/index-a74fe930.js"
   ],
   "src/components/icontags.tsx": [
   ],
   "src/components/metatags.tsx": [
   ],
   "src/components/sections/connectors.tsx": [
-    "/assets/index-678447b5.js"
+    "/assets/index-a74fe930.js"
   ],
   "src/components/sections/contributing.tsx": [
-    "/assets/index-678447b5.js"
+    "/assets/index-a74fe930.js"
   ],
   "src/components/sections/features.tsx": [
-    "/assets/index-678447b5.js"
+    "/assets/index-a74fe930.js"
   ],
   "src/components/sections/footer.tsx": [
-    "/assets/index-678447b5.js"
+    "/assets/index-a74fe930.js"
   ],
   "src/components/sections/starter.tsx": [
-    "/assets/index-678447b5.js"
+    "/assets/index-a74fe930.js"
   ],
   "src/components/sections/styles.module.scss?used": [
-    "/assets/styles.module-fb889907.js",
-    "/assets/styles-0daa483c.css"
+    "/assets/styles.module-8e5ff95e.js",
+    "/assets/styles-349d228a.css"
   ],
   "src/components/sections/top.tsx": [
-    "/assets/index-678447b5.js"
+    "/assets/index-a74fe930.js"
   ],
   "src/components/theme/themes.scss": [
   ],
   "src/components/theme/themes.ts": [
+    "/assets/index-a74fe930.js"
   ],
   "src/entry-client.tsx": [
   ],
@@ -78,12 +79,12 @@
   "src/root.tsx": [
   ],
   "src/routes/[...404].tsx": [
-    "/assets/_...404_-b4f7bf83.js"
+    "/assets/_...404_-90d5d744.js"
   ],
   "src/routes/index.tsx": [
-    "/assets/index-678447b5.js"
+    "/assets/index-a74fe930.js"
   ],
   "src/routes/webhook.tsx": [
-    "/assets/webhook-73871b46.js"
+    "/assets/webhook-ee3a70aa.js"
   ]
 }

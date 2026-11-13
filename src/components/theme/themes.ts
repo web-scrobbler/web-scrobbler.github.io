@@ -9,10 +9,7 @@
  * @param theme - New theme
  */
 export function updateTheme(theme: ModifiedTheme) {
-	document.documentElement.classList.remove(
-		'theme-light',
-		'theme-dark',
-	);
+	document.documentElement.classList.remove('theme-light', 'theme-dark');
 	document.documentElement.classList.add(processTheme(theme));
 	localStorage.setItem('theme', theme);
 }
